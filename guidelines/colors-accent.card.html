@@ -1,0 +1,30 @@
+<!-- @dsCard group="Colors" viewport="700x180" name="Accent — monochrome + reserved green" subtitle="Ink is the default accent; green is opt-in via [data-accent=green]" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  .wrap{font-family:var(--font-mono);padding:26px 28px;display:flex;gap:24px;align-items:stretch}
+  .col{flex:1}
+  .lbl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:10px}
+  .pair{display:flex;gap:10px}
+  .chip{flex:1;height:64px;border-radius:2px;display:flex;align-items:flex-end;padding:7px;box-sizing:border-box;font-size:9px;letter-spacing:.04em}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="col">
+    <div class="lbl">Monochrome — default</div>
+    <div class="pair">
+      <div class="chip" style="background:#141416;color:#fafafa">accent · #141416</div>
+      <div class="chip" style="background:#fafafa;color:#141416;border:1px solid #e9e9eb">on-dark · #FAFAFA</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="lbl">Reserved green — opt-in</div>
+    <div class="pair">
+      <div class="chip" style="background:#2f6f4f;color:#fafafa">green-600 · light</div>
+      <div class="chip" style="background:#54b084;color:#0c1f15">green-400 · dark</div>
+      <div class="chip" style="background:#eaf1ed;color:#2f6f4f">tint · #EAF1ED</div>
+    </div>
+  </div>
+</div>
+</body></html>

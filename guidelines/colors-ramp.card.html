@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" viewport="700x190" name="Ink → paper ramp" subtitle="The cool neutral gray ramp — every surface and text tone lives here" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  .wrap{font-family:var(--font-mono);padding:26px 28px;display:flex;gap:0}
+  .sw{flex:1;height:84px;display:flex;align-items:flex-end;padding:8px;box-sizing:border-box}
+  .meta{font-size:9px;letter-spacing:.04em;line-height:1.4}
+  .name{display:block;text-transform:uppercase;letter-spacing:.08em}
+  .hex{opacity:.7;display:block;margin-top:2px}
+  .row2{font-family:var(--font-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-faint);padding:0 28px 22px;display:flex;justify-content:space-between}
+</style></head>
+<body>
+<div class="wrap" id="r"></div>
+<div class="row2"><span>ink #141416</span><span>cool neutral grays</span><span>paper #FAFAFA</span></div>
+<script>
+  const ramp = [
+    ['ink-950','#0b0b0c','#fafafa'],['ink-900','#141416','#fafafa'],['ink-850','#1a1a1d','#fafafa'],
+    ['ink-800','#252528','#fafafa'],['gray-600','#54545a','#fafafa'],['gray-500','#717177','#fafafa'],
+    ['gray-400','#97979c','#141416'],['gray-300','#bbbbc0','#141416'],['gray-200','#d6d6d9','#141416'],
+    ['gray-150','#e9e9eb','#141416'],['gray-50','#f4f4f5','#141416'],['paper','#fafafa','#141416']
+  ];
+  document.getElementById('r').innerHTML = ramp.map(([n,h,fg])=>
+    `<div class="sw" style="background:${h};color:${fg};border:${n==='paper'?'1px solid #e9e9eb':'none'}">
+      <span class="meta"><span class="name">${n}</span><span class="hex">${h}</span></span></div>`).join('');
+</script>
+</body></html>

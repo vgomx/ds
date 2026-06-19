@@ -1,0 +1,61 @@
+<!-- @dsCard group="Portfolio" viewport="1180x820" name="Portfolio site — vitorgomes.design" subtitle="Interactive recreation: home, work index, case study, about" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitor Gomes — Portfolio UI Kit</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html, body { margin: 0; background: var(--surface-page); }
+  body { font-family: var(--font-sans); color: var(--text-primary); -webkit-font-smoothing: antialiased; }
+  #app { min-height: 100vh; display: flex; flex-direction: column; }
+  .screen { flex: 1; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+
+<script type="text/babel" src="Chrome.jsx"></script>
+<script type="text/babel" src="HomeScreen.jsx"></script>
+<script type="text/babel" src="WorkScreen.jsx"></script>
+<script type="text/babel" src="CaseStudyScreen.jsx"></script>
+<script type="text/babel" src="AboutScreen.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+  const PROJECTS = [
+    { id: 1, title: 'A visual identity for a video platform', discipline: 'Branding', year: 2026, tags: ['Case Study', 'Branding'], status: 'live', statusLabel: 'Live', imageLabel: '[ Video platform — brand ]', summary: 'Brand, motion and a flexible system for a hosting product finding its voice.' },
+    { id: 2, title: 'Internet brand facelift', discipline: 'UX / UI', year: 2025, tags: ['Case Study', 'UX / UI'], status: 'draft', statusLabel: 'Draft', imageLabel: '[ Internet brand — product ]', summary: 'A monochrome rework of a consumer dashboard — denser, calmer, faster to read.' },
+    { id: 3, title: 'Kitchen appliance campaign', discipline: 'Visual Design', year: 2024, tags: ['Case Study', 'Visual Design'], status: 'archived', statusLabel: 'Archived', imageLabel: '[ Appliance — campaign ]', summary: 'Art direction and a print-led campaign system for a heritage appliance brand.' },
+    { id: 4, title: 'A design system for fintech', discipline: 'UX / UI', year: 2025, tags: ['Case Study', 'Systems'], status: 'live', statusLabel: 'Live', imageLabel: '[ Fintech — system ]', summary: 'Tokens, components and the governance to keep forty screens in one voice.' },
+  ];
+
+  function App() {
+    const [page, setPage] = React.useState('home');
+    const [current, setCurrent] = React.useState(PROJECTS[0]);
+    const navigate = (p) => { setPage(p); window.scrollTo({ top: 0 }); };
+    const openCase = (p) => { setCurrent(p); setPage('case'); window.scrollTo({ top: 0 }); };
+
+    let screen;
+    if (page === 'work') screen = <WorkScreen projects={PROJECTS} onOpenCase={openCase} />;
+    else if (page === 'case') screen = <CaseStudyScreen project={current} onNavigate={navigate} />;
+    else if (page === 'about') screen = <AboutScreen />;
+    else screen = <HomeScreen projects={PROJECTS} onOpenCase={openCase} onNavigate={navigate} />;
+
+    return (
+      <React.Fragment>
+        <TopBar page={page} onNavigate={navigate} />
+        <div className="screen">{screen}</div>
+        <Footer />
+      </React.Fragment>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>

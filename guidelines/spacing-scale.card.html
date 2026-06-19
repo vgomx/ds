@@ -1,0 +1,18 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Spacing scale" subtitle="A 4/8 base; section rhythm runs generous — 48 / 80" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  .wrap{font-family:var(--font-mono);padding:26px 30px;display:flex;gap:14px;align-items:flex-end}
+  .item{display:flex;flex-direction:column;align-items:center;gap:8px}
+  .bar{width:26px;background:var(--ink-900)}
+  .cap{font-size:9px;letter-spacing:.05em;color:var(--text-faint)}
+</style></head>
+<body>
+<div class="wrap" id="r"></div>
+<script>
+  const steps=[['1',4],['2',8],['3',12],['4',16],['5',24],['6',32],['7',40],['8',48],['10',80]];
+  document.getElementById('r').innerHTML=steps.map(([n,px])=>
+    `<div class="item"><div class="bar" style="height:${Math.min(px,90)}px"></div><span class="cap">${n} · ${px}</span></div>`).join('');
+</script>
+</body></html>

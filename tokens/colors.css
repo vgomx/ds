@@ -1,0 +1,105 @@
+/* ============================================================
+   Vitor Gomes Design System — Colors
+   A light-first, monochrome system. Ink (#141416) on paper
+   (#FAFAFA), a cool neutral gray ramp between them, and ONE
+   reserved accent (green) that is opt-in — off by default.
+   "Monochrome by default; switch the accent on to bring the
+   reserved green into play." Restraint is the brand.
+   ============================================================ */
+
+:root {
+  /* --- Ink → paper ramp (cool neutral grays) --- */
+  --ink-950: #0b0b0c; /* deepest — selection, max contrast */
+  --ink-900: #141416; /* primary ink — text, primary surfaces */
+  --ink-850: #1a1a1d; /* elevated dark surface (menus on dark) */
+  --ink-800: #252528; /* dark hairline / dark hover */
+  --gray-600: #54545a; /* body text / secondary */
+  --gray-500: #717177; /* muted labels */
+  --gray-400: #97979c; /* faint / placeholder / on-dark muted */
+  --gray-300: #bbbbc0; /* disabled text, mute borders */
+  --gray-200: #d6d6d9; /* default borders */
+  --gray-150: #e9e9eb; /* hairline borders, tracks */
+  --gray-100: #efeff0; /* sunken stripe */
+  --gray-50:  #f4f4f5; /* subtle fill / hover tint */
+  --paper:    #fafafa; /* page + card surface */
+  --white:    #ffffff;
+
+  /* --- Reserved accent: GREEN (opt-in) --- */
+  --green-700: #0c1f15; /* ink on green (dark) */
+  --green-600: #2f6f4f; /* accent on LIGHT surfaces */
+  --green-400: #54b084; /* accent on DARK surfaces */
+  --green-tint-light: #eaf1ed;
+  --green-tint-dark:  #16271d;
+
+  /* --- Destructive (single warm red, two tones) --- */
+  --red-600: #a33a2e; /* on light surfaces */
+  --red-400: #e0816f; /* on dark surfaces */
+
+  /* ===========================================================
+     SEMANTIC ALIASES — reference these in components
+     =========================================================== */
+
+  /* Text (on light) */
+  --text-primary:   var(--ink-900);
+  --text-secondary: var(--gray-600);
+  --text-muted:     var(--gray-500);
+  --text-faint:     var(--gray-400);
+  --text-disabled:  var(--gray-300);
+  --text-on-ink:    var(--paper); /* paper text on dark surfaces */
+
+  /* Text (on dark) */
+  --text-inverse-primary: var(--paper);
+  --text-inverse-muted:   var(--gray-400);
+  --text-inverse-faint:   var(--gray-500);
+
+  /* Surfaces */
+  --surface-page:   var(--paper);
+  --surface-card:   var(--paper);
+  --surface-subtle: var(--gray-50);  /* hover tint, selected row */
+  --surface-sunken: var(--gray-100);
+  --surface-ink:    var(--ink-900);  /* dark sections, primary btn */
+  --surface-ink-2:  var(--ink-850);  /* elevated dark (menu) */
+  --surface-ink-3:  var(--ink-800);  /* dark hover / selected */
+
+  /* Borders — edges do the work, not shadows */
+  --border-hairline: var(--gray-150); /* default card / divider */
+  --border-default:  var(--gray-200);
+  --border-mute:     var(--gray-300); /* secondary button outline */
+  --border-strong:   var(--ink-900);  /* emphasis / focused field */
+  --border-on-ink:   var(--ink-800);  /* hairline on dark */
+  --border-on-ink-2: var(--gray-600); /* visible outline on dark */
+
+  /* Accent — MONOCHROME by default (accent === ink) */
+  --accent:           var(--ink-900); /* accent on light surfaces */
+  --accent-ink:       var(--paper);   /* text/icon on the accent */
+  --accent-tint:      var(--gray-50); /* faint accent wash */
+  --accent-on-dark:   var(--paper);   /* accent when on dark surfaces */
+  --accent-on-dark-ink: var(--ink-900);
+  --accent-tint-dark: var(--ink-800);
+
+  /* Feedback */
+  --danger:         var(--red-600);
+  --danger-on-dark: var(--red-400);
+
+  /* Overlay */
+  --scrim: rgba(20, 20, 22, 0.55);
+
+  /* Focus ring — a crisp outline, never a glow */
+  --ring: var(--accent);
+  --ring-width: 2px;
+  --ring-offset: 2px;
+}
+
+/* ============================================================
+   ACCENT SCOPE — opt in to the reserved green by adding
+   data-accent="green" to any container (or <html>).
+   ============================================================ */
+[data-accent="green"] {
+  --accent:           var(--green-600);
+  --accent-ink:       var(--paper);
+  --accent-tint:      var(--green-tint-light);
+  --accent-on-dark:   var(--green-400);
+  --accent-on-dark-ink: var(--green-700);
+  --accent-tint-dark: var(--green-tint-dark);
+  --ring: var(--green-600);
+}

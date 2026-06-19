@@ -1,0 +1,18 @@
+<!-- @dsCard group="Spacing" viewport="700x160" name="Radius — 2px is the only softness" subtitle="One radius for every surface; circles only for dots and avatars" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  .wrap{font-family:var(--font-mono);padding:26px 30px;display:flex;gap:30px;align-items:center}
+  .item{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .box{width:84px;height:60px;background:var(--ink-900)}
+  .cap{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-faint)}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="item"><div class="box" style="border-radius:0"></div><span class="cap">none · 0</span></div>
+  <div class="item"><div class="box" style="border-radius:2px"></div><span class="cap">radius · 2px</span></div>
+  <div class="item"><div class="box" style="border-radius:50%;width:60px"></div><span class="cap">pill · dots/avatars</span></div>
+  <div class="item" style="margin-left:auto;max-width:24ch;align-items:flex-start"><span class="cap" style="line-height:1.6;text-transform:none;letter-spacing:.02em;font-size:11px;color:var(--text-secondary)">The diamond mark is sharp. Everything follows it — 2px is as soft as a rectangle gets.</span></div>
+</div>
+</body></html>

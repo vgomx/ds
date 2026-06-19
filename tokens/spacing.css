@@ -1,0 +1,49 @@
+/* ============================================================
+   Vitor Gomes Design System — Spacing, Radii, Borders, Motion
+   Edges, not shadows. 2px is the only softness. The diamond
+   mark is sharp; the system follows it. An 8px base grid, but
+   section rhythm is generous (48 / 80 / 72).
+   ============================================================ */
+
+:root {
+  /* Spacing scale (4 / 8 base) */
+  --space-1:  0.25rem;  /* 4  */
+  --space-2:  0.5rem;   /* 8  */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  2.5rem;   /* 40 — section column gap */
+  --space-8:  3rem;     /* 48 — page gutter */
+  --space-9:  4.5rem;   /* 72 */
+  --space-10: 5rem;     /* 80 — section padding (y) */
+  --space-12: 7.5rem;   /* 120 */
+
+  /* Radii — 2px is the ONLY softness; circles for dots/avatars */
+  --radius-none: 0;
+  --radius:      2px;   /* buttons, inputs, cards, chips, menus */
+  --radius-pill: 999px; /* status dots, avatars, stepper nodes */
+
+  /* Border widths — hairlines do the structural work */
+  --border-hairline-w: 1px;
+  --border-emphasis-w: 2px; /* active sidebar/nav rail, top-tab underline */
+
+  /* Elevation — the system avoids drop shadows. Surfaces are
+     separated by borders + scrims. These two are the ONLY
+     shadows, reserved for free-floating overlays that have no
+     adjacent edge (menus/popovers lifted off a busy backdrop). */
+  --shadow-none: none;
+  --shadow-pop:  0 8px 28px rgba(20, 20, 22, 0.12);
+
+  /* Motion — quiet and quick. Linear/ease, no bounce. */
+  --ease-out:   cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   180ms; /* @kind other */
+  --dur-slow:   300ms; /* @kind other */
+
+  /* Layout */
+  --container:    1180px; /* masthead / sections max width */
+  --container-sm: 640px;  /* prose / accordion measure */
+  --gutter:       3rem;   /* 48px page padding */
+}

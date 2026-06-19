@@ -1,0 +1,66 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Overlay — Menu, Modal, Drawer" subtitle="Dropdowns and scrimmed surfaces" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html, body { margin: 0; background: var(--surface-page); }
+  .wrap { font-family: var(--font-sans); color: var(--text-primary); padding: 30px; }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 14px; }
+  .row { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
+</style>
+</head>
+<body>
+<div id="root" class="wrap"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+
+<script type="text/babel">
+  const { Menu, Modal, Drawer, Button, Input } = window.VitorGomesDesignSystem_32625a;
+  function Demo() {
+    const [sort, setSort] = React.useState('recent');
+    const [modal, setModal] = React.useState(false);
+    const [drawer, setDrawer] = React.useState(false);
+    return (
+      <React.Fragment>
+        <div className="lbl">Menu · Modal · Drawer</div>
+        <div className="row">
+          <Menu label="Sort" value={sort} onSelect={setSort} items={[
+            { label: 'Recent', value: 'recent' },
+            { label: 'Oldest', value: 'oldest' },
+            { label: 'A–Z', value: 'az' },
+            { divider: true },
+            { label: 'Clear filters', value: 'clear', danger: true },
+          ]} />
+          <Button variant="secondary" onClick={() => setModal(true)}>Open dialog</Button>
+          <Button variant="secondary" onClick={() => setDrawer(true)}>Open drawer</Button>
+        </div>
+
+        <Modal open={modal} onClose={() => setModal(false)} title="Start a project"
+          footer={<><Button variant="ghost" size="sm" onClick={() => setModal(false)}>Cancel</Button><Button variant="accent" size="sm" onClick={() => setModal(false)}>Send</Button></>}>
+          <p style={{ fontSize: 14, lineHeight: 1.55, color: 'var(--text-secondary)', margin: '0 0 16px' }}>Tell me a little about what you're building and I'll get back within two days.</p>
+          <Input placeholder="you@studio.com" />
+        </Modal>
+
+        <Drawer open={drawer} onClose={() => setDrawer(false)} title="Filters"
+          footer={<Button fullWidth onClick={() => setDrawer(false)} style={{ background: 'var(--paper)', color: 'var(--ink-900)', borderColor: 'var(--paper)' }}>Apply</Button>}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            {['Branding','UX / UI','Visual Design'].map((t, i) => (
+              <span key={t} style={{ fontSize: 14, color: i===0 ? 'var(--paper)' : 'var(--gray-300)', display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ width: 15, height: 15, display: 'inline-block', background: i===0 ? 'var(--accent-on-dark)' : 'transparent', border: i===0 ? 'none' : '1px solid var(--gray-600)' }}></span>{t}
+              </span>
+            ))}
+          </div>
+        </Drawer>
+      </React.Fragment>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

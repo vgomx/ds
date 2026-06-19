@@ -1,0 +1,18 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Edges, not shadows" subtitle="Surfaces separate by hairline borders and scrims — drop shadows are reserved only for free-floating overlays" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  .wrap{font-family:var(--font-mono);padding:24px 30px;display:flex;gap:14px;align-items:stretch}
+  .card{flex:1;background:var(--surface-card);padding:16px;display:flex;flex-direction:column;justify-content:space-between;min-height:96px}
+  .cap{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-faint)}
+  .val{font-size:11px;color:var(--text-secondary);letter-spacing:.02em}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="card" style="border:1px solid var(--border-hairline)"><span class="cap">Hairline</span><span class="val">1px · #E9E9EB<br>default card edge</span></div>
+  <div class="card" style="border:1px solid var(--border-mute)"><span class="cap">Mute</span><span class="val">1px · #BBBBC0<br>secondary outline</span></div>
+  <div class="card" style="border:1px solid var(--border-strong)"><span class="cap">Strong</span><span class="val">1px · #141416<br>emphasis / focus</span></div>
+  <div class="card" style="border:1px solid var(--border-hairline);box-shadow:var(--shadow-pop)"><span class="cap">Shadow-pop</span><span class="val">overlays only<br>menus, popovers</span></div>
+</div>
+</body></html>

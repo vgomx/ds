@@ -1,0 +1,9 @@
+/* ============================================================
+   Vitor Gomes Design System — Keyframes
+   The system's only motion primitives. Quiet, linear, no bounce.
+   ============================================================ */
+
+@keyframes vg-spin   { to { transform: rotate(360deg); } }
+@keyframes vg-indet  { 0% { left: -40%; } 100% { left: 100%; } }
+@keyframes vg-pulse  { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+@keyframes vg-rise   { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
