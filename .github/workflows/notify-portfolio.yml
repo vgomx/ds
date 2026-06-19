@@ -1,0 +1,12 @@
+name: Notify portfolio on DS update
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger portfolio redeploy
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
