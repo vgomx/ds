@@ -81,3 +81,4 @@ Each directory has `<Name>.jsx` + `<Name>.d.ts` + `<Name>.prompt.md`, and one `*
 
 ## Using it
 Link `styles.css`, load `_ds_bundle.js`, then `const { Button, Card, Table, … } = window.VitorGomesDesignSystem_32625a`. Stay monochrome; reach for the green accent only on a live/active signal, and never add a drop shadow where a border will do.
+<!-- cascade test -->
