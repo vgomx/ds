@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VG Design System</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: var(--surface-page);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+    }
+
+    /* ── Sidebar ──────────────────────────────────────── */
+    .sidebar {
+      position: fixed;
+      top: 0; left: 0;
+      width: 216px;
+      height: 100vh;
+      background: var(--surface-ink);
+      display: flex;
+      flex-direction: column;
+      padding: 28px 20px 28px 24px;
+      border-right: 1px solid var(--border-on-ink);
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+    .sidebar::-webkit-scrollbar { display: none; }
+
+    .sidebar-brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 36px;
+      flex-shrink: 0;
+    }
+    .sidebar-brand svg {
+      width: 20px;
+      flex-shrink: 0;
+    }
+    .sidebar-brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .sidebar-brand-name {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--paper);
+      letter-spacing: -.01em;
+    }
+    .sidebar-brand-sub {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-inverse-faint);
+    }
+
+    nav { flex: 1; }
+    nav ul { list-style: none; }
+
+    .nav-group {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-inverse-faint);
+      padding: 20px 0 6px;
+      margin-left: 8px;
+    }
+    .nav-group:first-child { padding-top: 0; }
+
+    nav a {
+      display: block;
+      font-size: 12.5px;
+      color: var(--text-inverse-muted);
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: var(--radius);
+      transition: color .12s, background .12s;
+      line-height: 1.4;
+    }
+    nav a:hover {
+      color: var(--paper);
+      background: var(--surface-ink-3);
+    }
+    nav a.active {
+      color: var(--paper);
+      background: var(--surface-ink-2);
+    }
+
+    .sidebar-footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-on-ink);
+      flex-shrink: 0;
+    }
+    .sidebar-footer span {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-inverse-faint);
+      display: block;
+    }
+
+    /* ── Main ─────────────────────────────────────────── */
+    .main {
+      margin-left: 216px;
+      flex: 1;
+      min-width: 0;
+      padding: 56px 64px 96px;
+    }
+
+    .page-header {
+      margin-bottom: 64px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+    .page-title {
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: -.025em;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .page-meta {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    /* ── Group sections ───────────────────────────────── */
+    .group-section {
+      margin-bottom: 72px;
+    }
+    .group-section:last-child { margin-bottom: 0; }
+
+    .group-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 28px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+    }
+
+    /* ── Card item ────────────────────────────────────── */
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card-meta-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .card-name {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: -.01em;
+    }
+    .card-subtitle {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: .04em;
+      color: var(--text-faint);
+    }
+
+    /* ── iframe wrapper ───────────────────────────────── */
+    .frame-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius);
+      background: var(--surface-page);
+    }
+    .frame-wrap iframe {
+      display: block;
+      width: 700px;
+      border: none;
+      transform-origin: top left;
+      pointer-events: none; /* cards are display-only */
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Sidebar ─────────────────────────────────────────── -->
+<aside class="sidebar">
+
+  <div class="sidebar-brand">
+    <svg viewBox="0 0 562 369" fill="#FAFAFA" style="fill-rule:evenodd;clip-rule:evenodd" aria-hidden="true">
+      <g transform="matrix(1,0,0,1,-696,73)">
+        <g transform="matrix(8.693433,0,0,8.693433,-7671.335362,-8770.706084)">
+          <g transform="matrix(1,0,0,1,994.8125,1002.9085)">
+            <path d="M0,37.612L31.187,18.993L31.187,18.619L0,0L-31.187,18.619L-31.187,18.993L0,37.612ZM0,32.004L-22.105,18.806L0,5.609L22.105,18.806L0,32.004Z"/>
+          </g>
+          <g transform="matrix(1,0,0,1,1008.8203,1021.5751)">
+            <path d="M0,0.169L0,0L-14.077,-8.404L-28.154,0L-28.154,0.169L-14.077,8.573L0,0.169Z"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <div class="sidebar-brand-text">
+      <span class="sidebar-brand-name">Vitor Gomes</span>
+      <span class="sidebar-brand-sub">Design System</span>
+    </div>
+  </div>
+
+  <nav aria-label="Design system sections">
+    <ul>
+      <li class="nav-group">Brand</li>
+      <li><a href="#brand-masthead">Masthead lockup</a></li>
+      <li><a href="#brand-symbol">VG symbol</a></li>
+
+      <li class="nav-group">Colors</li>
+      <li><a href="#colors-ramp">Ink → paper ramp</a></li>
+      <li><a href="#colors-accent">Accent</a></li>
+      <li><a href="#colors-semantic">Semantic + destructive</a></li>
+
+      <li class="nav-group">Spacing</li>
+      <li><a href="#edges">Edges, not shadows</a></li>
+      <li><a href="#radius">Radius</a></li>
+      <li><a href="#spacing-scale">Spacing scale</a></li>
+
+      <li class="nav-group">Type</li>
+      <li><a href="#type-display">Display scale</a></li>
+      <li><a href="#type-body">Body &amp; lead</a></li>
+      <li><a href="#type-mono">JetBrains Mono</a></li>
+
+      <li class="nav-group">Components</li>
+      <li><a href="#core">Core</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#navigation">Navigation</a></li>
+      <li><a href="#overlay">Overlay</a></li>
+      <li><a href="#data">Data</a></li>
+    </ul>
+  </nav>
+
+  <footer class="sidebar-footer">
+    <span>v0.1 · Draft</span>
+  </footer>
+
+</aside>
+
+<!-- ── Main ───────────────────────────────────────────── -->
+<main class="main">
+
+  <header class="page-header">
+    <h1 class="page-title">VG Design System</h1>
+    <p class="page-meta">Component Library · 16 cards · v0.1</p>
+  </header>
+
+  <!-- Brand -->
+  <section class="group-section" id="brand">
+    <h2 class="group-label">Brand</h2>
+    <div class="cards">
+
+      <div class="card-item" id="brand-masthead">
+        <div class="card-meta-row">
+          <span class="card-name">Masthead lockup</span>
+          <span class="card-subtitle">Wordmark + meta on an ink rule — how the brand signs a page</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="150">
+          <iframe src="guidelines/brand-masthead.card.html" height="150" loading="lazy" title="Masthead lockup"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="brand-symbol">
+        <div class="card-meta-row">
+          <span class="card-name">The VG symbol</span>
+          <span class="card-subtitle">A folded diamond monogram — the only mark, on paper and ink</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="200">
+          <iframe src="guidelines/brand-symbol.card.html" height="200" loading="lazy" title="The VG symbol"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Colors -->
+  <section class="group-section" id="colors">
+    <h2 class="group-label">Colors</h2>
+    <div class="cards">
+
+      <div class="card-item" id="colors-ramp">
+        <div class="card-meta-row">
+          <span class="card-name">Ink → paper ramp</span>
+          <span class="card-subtitle">The cool neutral gray ramp — every surface and text tone lives here</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="190">
+          <iframe src="guidelines/colors-ramp.card.html" height="190" loading="lazy" title="Ink → paper ramp"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="colors-accent">
+        <div class="card-meta-row">
+          <span class="card-name">Accent — monochrome + reserved green</span>
+          <span class="card-subtitle">Ink is the default accent; green is opt-in via [data-accent=green]</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="180">
+          <iframe src="guidelines/colors-accent.card.html" height="180" loading="lazy" title="Accent"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="colors-semantic">
+        <div class="card-meta-row">
+          <span class="card-name">Semantic + destructive</span>
+          <span class="card-subtitle">Status and the single reserved red, in light and dark tones</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="150">
+          <iframe src="guidelines/colors-semantic.card.html" height="150" loading="lazy" title="Semantic + destructive"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Spacing -->
+  <section class="group-section" id="spacing">
+    <h2 class="group-label">Spacing</h2>
+    <div class="cards">
+
+      <div class="card-item" id="edges">
+        <div class="card-meta-row">
+          <span class="card-name">Edges, not shadows</span>
+          <span class="card-subtitle">Surfaces separate by hairline borders and scrims — drop shadows reserved only for free-floating overlays</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="180">
+          <iframe src="guidelines/edges.card.html" height="180" loading="lazy" title="Edges, not shadows"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="radius">
+        <div class="card-meta-row">
+          <span class="card-name">Radius — 2px is the only softness</span>
+          <span class="card-subtitle">One radius for every surface; circles only for dots and avatars</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="160">
+          <iframe src="guidelines/radius.card.html" height="160" loading="lazy" title="Radius"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="spacing-scale">
+        <div class="card-meta-row">
+          <span class="card-name">Spacing scale</span>
+          <span class="card-subtitle">A 4/8 base; section rhythm runs generous — 48 / 80</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="170">
+          <iframe src="guidelines/spacing-scale.card.html" height="170" loading="lazy" title="Spacing scale"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Type -->
+  <section class="group-section" id="type">
+    <h2 class="group-label">Type</h2>
+    <div class="cards">
+
+      <div class="card-item" id="type-display">
+        <div class="card-meta-row">
+          <span class="card-name">Archivo — display scale</span>
+          <span class="card-subtitle">Hero, section heading and card title — tight, grotesque, confident</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="230">
+          <iframe src="guidelines/type-display.card.html" height="230" loading="lazy" title="Display scale"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="type-body">
+        <div class="card-meta-row">
+          <span class="card-name">Archivo — body &amp; lead</span>
+          <span class="card-subtitle">Lead paragraph and body copy at their working sizes</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="210">
+          <iframe src="guidelines/type-body.card.html" height="210" loading="lazy" title="Body & lead"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="type-mono">
+        <div class="card-meta-row">
+          <span class="card-name">JetBrains Mono — the labelling voice</span>
+          <span class="card-subtitle">Eyebrows, data and section markers — uppercase and tracked</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="180">
+          <iframe src="guidelines/type-mono.card.html" height="180" loading="lazy" title="JetBrains Mono"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Components -->
+  <section class="group-section" id="components">
+    <h2 class="group-label">Components</h2>
+    <div class="cards">
+
+      <div class="card-item" id="core">
+        <div class="card-meta-row">
+          <span class="card-name">Core — Buttons, Tags, Badges, Input</span>
+          <span class="card-subtitle">Actions, labels, status and fields</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="560">
+          <iframe src="components/core/core.card.html" height="560" loading="lazy" title="Core"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="feedback">
+        <div class="card-meta-row">
+          <span class="card-name">Feedback — Progress, Spinner, Skeleton, Accordion</span>
+          <span class="card-subtitle">Loading, progress and disclosure</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="540">
+          <iframe src="components/feedback/feedback.card.html" height="540" loading="lazy" title="Feedback"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="navigation">
+        <div class="card-meta-row">
+          <span class="card-name">Navigation — Breadcrumb, Pagination, Stepper</span>
+          <span class="card-subtitle">Wayfinding and progress through a process</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="420">
+          <iframe src="components/navigation/navigation.card.html" height="420" loading="lazy" title="Navigation"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="overlay">
+        <div class="card-meta-row">
+          <span class="card-name">Overlay — Menu, Modal, Drawer</span>
+          <span class="card-subtitle">Dropdowns and scrimmed surfaces</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="460">
+          <iframe src="components/overlay/overlay.card.html" height="460" loading="lazy" title="Overlay"></iframe>
+        </div>
+      </div>
+
+      <div class="card-item" id="data">
+        <div class="card-meta-row">
+          <span class="card-name">Data — Cards, Stats, Table</span>
+          <span class="card-subtitle">Surfaces, figures and the index table</span>
+        </div>
+        <div class="frame-wrap" data-w="700" data-h="620">
+          <iframe src="components/data/data.card.html" height="620" loading="lazy" title="Data"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Scale each iframe so it fills its container without overflow
+  function scaleFrames() {
+    document.querySelectorAll('.frame-wrap').forEach(wrap => {
+      const naturalW = parseInt(wrap.dataset.w);
+      const naturalH = parseInt(wrap.dataset.h);
+      const availW   = wrap.clientWidth;
+      const scale    = Math.min(1, availW / naturalW);
+      const iframe   = wrap.querySelector('iframe');
+      iframe.style.transform = `scale(${scale})`;
+      wrap.style.height = Math.round(naturalH * scale) + 'px';
+    });
+  }
+  window.addEventListener('load', scaleFrames);
+  window.addEventListener('resize', scaleFrames);
+
+  // Active nav link based on scroll position
+  const items    = document.querySelectorAll('.card-item[id], .group-section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const id   = entry.target.id;
+      const link = document.querySelector(`nav a[href="#${id}"]`);
+      if (!link) return;
+      navLinks.forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+    });
+  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+
+  items.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
