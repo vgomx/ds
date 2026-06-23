@@ -20,7 +20,7 @@ function variantStyles(variant) {
       };
     case 'secondary':
       return {
-        base: { background: 'transparent', color: 'var(--text-primary)', borderColor: 'var(--border-mute)' },
+        base: { background: 'var(--surface-button-secondary)', color: 'var(--text-primary)', borderColor: 'var(--border-mute)' },
         hover: { background: 'var(--surface-subtle)', borderColor: 'var(--border-strong)' },
         active: { background: 'var(--gray-150)', borderColor: 'var(--border-strong)' },
         disabled: { background: 'transparent', color: 'var(--text-disabled)', borderColor: 'var(--border-hairline)' },

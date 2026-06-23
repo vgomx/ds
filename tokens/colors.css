@@ -60,6 +60,7 @@
   --surface-ink:    var(--ink-900);  /* dark sections, primary btn */
   --surface-ink-2:  var(--ink-850);  /* elevated dark (menu) */
   --surface-ink-3:  var(--ink-800);  /* dark hover / selected */
+  --surface-button-secondary: var(--white);  /* secondary btn — raised white on paper */
 
   /* Borders — edges do the work, not shadows */
   --border-hairline: var(--gray-150); /* default card / divider */
