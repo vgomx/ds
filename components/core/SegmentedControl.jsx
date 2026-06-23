@@ -21,6 +21,7 @@ export function SegmentedControl({ options = [], value, onChange, onDark = false
         borderRadius: 'var(--radius)',
         overflow: 'hidden',
         width: 'max-content',
+        background: onDark ? 'transparent' : 'var(--surface-page)',
         ...style,
       }}
       {...rest}
