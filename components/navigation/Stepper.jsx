@@ -14,12 +14,50 @@ function nodeStyle(state) {
 }
 
 /**
- * Stepper — numbered nodes joined by hairline connectors. Steps before
- * the active one are ink, the active one is the accent, the rest outline.
- *
+ * Stepper — numbered nodes joined by connectors.
  * steps: string[] (labels). current: 0-indexed active step.
+ * vertical: boolean — renders nodes in a left column, labels on the right.
  */
-export function Stepper({ steps = [], current = 0, style, ...rest }) {
+export function Stepper({ steps = [], current = 0, vertical = false, style, ...rest }) {
+  if (vertical) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', ...style }} {...rest}>
+        {steps.map((label, i) => {
+          const state = i < current ? 'done' : i === current ? 'current' : 'upcoming';
+          const isLast = i === steps.length - 1;
+          const connectorOn = i < current;
+          return (
+            <div key={i} style={{ display: 'flex', gap: 16 }}>
+              {/* Left: node + vertical connector */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 34, flexShrink: 0 }}>
+                <div style={{
+                  width: 34, height: 34, borderRadius: '50%',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontFamily: 'var(--font-mono)', fontSize: 13, flexShrink: 0,
+                  ...nodeStyle(state),
+                }}>{i + 1}</div>
+                {!isLast && (
+                  <div style={{
+                    width: 1, flex: 1, minHeight: 14,
+                    background: connectorOn ? 'var(--accent)' : 'var(--border-default)',
+                  }} />
+                )}
+              </div>
+              {/* Right: label */}
+              <div style={{ display: 'flex', alignItems: 'center', paddingBottom: isLast ? 0 : 14 }}>
+                <span style={{
+                  fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.06em',
+                  textTransform: 'uppercase',
+                  color: state === 'upcoming' ? 'var(--text-faint)' : 'var(--text-primary)',
+                }}>{label}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   return (
     <div style={{ display: 'flex', alignItems: 'flex-start', maxWidth: 560, ...style }} {...rest}>
       {steps.map((label, i) => {
