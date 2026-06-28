@@ -5,7 +5,7 @@ import React from 'react';
 function nodeStyle(state) {
   switch (state) {
     case 'done':
-      return { background: 'var(--ink-900)', color: 'var(--paper)', border: '1px solid var(--ink-900)' };
+      return { background: 'var(--text-primary)', color: 'var(--surface-page)', border: '1px solid var(--text-primary)' };
     case 'current':
       return { background: 'var(--accent)', color: 'var(--accent-ink)', border: '1px solid var(--accent)' };
     default:
