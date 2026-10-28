@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"ba04182457a4","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"a595a87e4811","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"d39f2bed5cc3","components/case/CaseDetails.jsx":"39cff88d70e8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"e2c86384f7f8","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"c6f8d0524e19"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1625,6 +1625,1823 @@ function Modal({
 Object.assign(__ds_scope, { Modal });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/overlay/Modal.jsx", error: String((e && e.message) || e) }); }
 
+// components/case/ProgressRing.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const CIRC = 2 * Math.PI * 6;
+
+/**
+ * ProgressRing — a small ink arc on a hairline track that pairs with a
+ * percentage, so reading progress never reads as another section number.
+ * Starts at 12 o'clock, runs clockwise, stays ink at 100%.
+ */
+function ProgressRing({
+  value = 0,
+  size = 14,
+  strokeWidth = 2,
+  style,
+  ...rest
+}) {
+  const v = Math.max(0, Math.min(100, Number(value) || 0));
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: size,
+    height: size,
+    viewBox: "0 0 14 14",
+    "aria-hidden": "true",
+    style: {
+      display: 'block',
+      flexShrink: 0,
+      transform: 'rotate(-90deg)',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("circle", {
+    cx: "7",
+    cy: "7",
+    r: "6",
+    fill: "none",
+    stroke: "var(--border-hairline)",
+    strokeWidth: strokeWidth
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "7",
+    cy: "7",
+    r: "6",
+    fill: "none",
+    stroke: "var(--text-primary)",
+    strokeWidth: strokeWidth,
+    strokeDasharray: CIRC.toFixed(2),
+    strokeDashoffset: (CIRC * (1 - v / 100)).toFixed(2),
+    style: {
+      transition: 'stroke-dashoffset var(--dur-base, 180ms) var(--ease-out, ease)'
+    }
+  }));
+}
+Object.assign(__ds_scope, { ProgressRing });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ProgressRing.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/SectionNav.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useEffect,
+  useState
+} = React;
+const {
+  ProgressRing
+} = __ds_scope;
+const mono = {
+  fontFamily: 'var(--font-mono)',
+  textTransform: 'uppercase'
+};
+
+/* Resolve "auto" from the viewport: open ≥1500px, collapsed 900–1499px,
+   hidden below 900px. Renders collapsed on the server and first paint. */
+function useNavMode(mode) {
+  const [auto, setAuto] = useState('collapsed');
+  useEffect(() => {
+    if (mode !== 'auto' || typeof window === 'undefined' || !window.matchMedia) return undefined;
+    const wide = window.matchMedia('(min-width: 1500px)');
+    const mid = window.matchMedia('(min-width: 900px)');
+    const update = () => setAuto(wide.matches ? 'open' : mid.matches ? 'collapsed' : 'hidden');
+    update();
+    wide.addEventListener('change', update);
+    mid.addEventListener('change', update);
+    return () => {
+      wide.removeEventListener('change', update);
+      mid.removeEventListener('change', update);
+    };
+  }, [mode]);
+  return mode === 'auto' ? auto : mode;
+}
+
+/**
+ * SectionNav — the case-study side nav. Numbered sections with a 2px
+ * rail each (done = ink, current = filling as you read, upcoming =
+ * hairline), and a footer with a ProgressRing, the % read and the
+ * minutes left. Open with labels on wide screens, collapsed to numbers
+ * in between, hidden on phones (use ReadingBar there).
+ */
+function SectionNav({
+  sections = [],
+  activeId,
+  sectionProgress = 0,
+  progress = 0,
+  minutesLeft,
+  mode = 'auto',
+  onNavigate,
+  label = 'Case sections',
+  style,
+  ...rest
+}) {
+  const resolved = useNavMode(mode);
+  const [hover, setHover] = useState(null);
+  const [focus, setFocus] = useState(null);
+  if (resolved === 'hidden') return null;
+  const open = resolved === 'open';
+  const activeIndex = Math.max(0, sections.findIndex(s => s.id === activeId));
+  const pct = Math.round(Math.max(0, Math.min(100, progress)));
+  return /*#__PURE__*/React.createElement("nav", _extends({
+    "aria-label": label,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      width: 'auto',
+      minWidth: open ? 160 : 0,
+      background: 'var(--surface-page)',
+      border: '1px solid var(--border-hairline)',
+      ...style
+    }
+  }, rest), sections.map((s, i) => {
+    const current = i === activeIndex;
+    const fill = i < activeIndex ? 100 : current ? Math.max(4, Math.min(100, sectionProgress)) : 0;
+    return /*#__PURE__*/React.createElement("a", {
+      key: s.id,
+      href: s.href || `#${s.id}`,
+      "aria-label": s.label,
+      "aria-current": current ? 'location' : undefined,
+      onClick: onNavigate ? e => onNavigate(s.id, e) : undefined,
+      onMouseEnter: () => setHover(i),
+      onMouseLeave: () => setHover(null),
+      onFocus: () => setFocus(i),
+      onBlur: () => setFocus(null),
+      style: {
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10,
+        minHeight: 32,
+        boxSizing: 'border-box',
+        padding: '7px 10px 7px 12px',
+        textDecoration: 'none',
+        background: current || hover === i ? 'var(--surface-subtle)' : 'var(--surface-page)',
+        outline: focus === i ? 'var(--ring-width, 2px) solid var(--ring)' : 'none',
+        outlineOffset: -2,
+        transition: 'background-color var(--dur-fast, 120ms) var(--ease-out, ease)'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      "aria-hidden": "true",
+      style: {
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        bottom: 0,
+        width: 2,
+        background: 'var(--border-hairline)'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'block',
+        width: 2,
+        height: `${fill}%`,
+        background: 'var(--text-primary)',
+        transition: 'height var(--dur-base, 180ms) var(--ease-out, ease)'
+      }
+    })), /*#__PURE__*/React.createElement("span", {
+      style: {
+        ...mono,
+        fontSize: 10,
+        letterSpacing: '0.1em',
+        color: 'var(--text-muted)',
+        width: 18,
+        flexShrink: 0
+      }
+    }, s.number || String(i + 1).padStart(2, '0')), open && /*#__PURE__*/React.createElement("span", {
+      style: {
+        ...mono,
+        fontSize: 11,
+        letterSpacing: '0.08em',
+        whiteSpace: 'nowrap',
+        color: current ? 'var(--text-primary)' : 'var(--text-secondary)'
+      }
+    }, s.label));
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: open ? 'row' : 'column',
+      alignItems: open ? 'center' : 'flex-start',
+      gap: open ? 8 : 6,
+      padding: '8px 12px',
+      borderTop: '1px solid var(--border-hairline)',
+      ...mono,
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      color: 'var(--text-muted)'
+    }
+  }, /*#__PURE__*/React.createElement(ProgressRing, {
+    value: pct
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      whiteSpace: 'nowrap'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'var(--text-primary)'
+    }
+  }, pct, "%"), open && minutesLeft != null && /*#__PURE__*/React.createElement("span", null, " \xB7 ", minutesLeft, " min left"))));
+}
+Object.assign(__ds_scope, { SectionNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/SectionNav.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/ReadingBar.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * ReadingBar — the phone version of SectionNav. A slim sticky bar with
+ * the current section, minutes left and a 2px progress line along its
+ * bottom edge.
+ */
+function ReadingBar({
+  section,
+  progress = 0,
+  minutesLeft,
+  sticky = true,
+  style,
+  ...rest
+}) {
+  const pct = Math.max(0, Math.min(100, progress));
+  return /*#__PURE__*/React.createElement("div", _extends({
+    role: "progressbar",
+    "aria-label": "Reading progress",
+    "aria-valuemin": 0,
+    "aria-valuemax": 100,
+    "aria-valuenow": Math.round(pct),
+    style: {
+      position: sticky ? 'sticky' : 'relative',
+      top: 0,
+      zIndex: 10,
+      background: 'var(--surface-page)',
+      borderBottom: '1px solid var(--border-hairline)',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      gap: 12,
+      padding: '12px 16px',
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      textTransform: 'uppercase',
+      color: 'var(--text-primary)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, section ? `${section.number} · ${section.label}` : ''), minutesLeft != null && /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'var(--text-muted)',
+      whiteSpace: 'nowrap'
+    }
+  }, minutesLeft, " min left")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 2,
+      background: 'var(--border-hairline)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 2,
+      width: `${pct}%`,
+      background: 'var(--text-primary)',
+      transition: 'width var(--dur-base, 180ms) var(--ease-out, ease)'
+    }
+  })));
+}
+Object.assign(__ds_scope, { ReadingBar });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ReadingBar.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/CompareSlider.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState
+} = React;
+const {
+  Badge
+} = __ds_scope;
+const stripes = 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)';
+const monoLabel = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: 11,
+  letterSpacing: '0.08em',
+  textTransform: 'uppercase',
+  color: 'var(--text-muted)'
+};
+function Layer({
+  img,
+  fallback,
+  style
+}) {
+  if (img && img.src) {
+    return /*#__PURE__*/React.createElement("img", {
+      src: img.src,
+      alt: "",
+      style: {
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        display: 'block',
+        ...style
+      }
+    });
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: style && style.background ? style.background : 'var(--surface-sunken)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      ...style
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: monoLabel
+  }, "[ ", fallback, " ]"));
+}
+
+/**
+ * CompareSlider — before and after in one frame, split by a draggable
+ * handle. The whole image is the hit area; it is a native range input,
+ * so arrows, Page Up/Down and Home/End work. Each label fades out once
+ * its side is under 12% of the frame.
+ */
+function CompareSlider({
+  before,
+  after,
+  labels = {
+    before: 'Before',
+    after: 'After'
+  },
+  start = 50,
+  ratio = '16 / 9',
+  caption,
+  style,
+  ...rest
+}) {
+  const [pos, setPos] = useState(start);
+  const fade = on => ({
+    opacity: on ? 1 : 0,
+    transition: 'opacity var(--dur-base, 180ms) var(--ease-out, ease)',
+    pointerEvents: 'none'
+  });
+  const alt = [before && before.alt && `Before: ${before.alt}`, after && after.alt && `After: ${after.alt}`].filter(Boolean).join('. ');
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    style: {
+      margin: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    role: "img",
+    "aria-label": alt || 'Before and after comparison',
+    style: {
+      position: 'relative',
+      aspectRatio: ratio,
+      overflow: 'hidden',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      background: 'var(--surface-sunken)'
+    }
+  }, /*#__PURE__*/React.createElement(Layer, {
+    img: after,
+    fallback: labels.after
+  }), /*#__PURE__*/React.createElement(Layer, {
+    img: before,
+    fallback: labels.before,
+    style: {
+      clipPath: `inset(0 ${100 - pos}% 0 0)`,
+      background: stripes
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 12,
+      left: 12,
+      ...fade(pos > 12)
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    status: "archived"
+  }, labels.before)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 12,
+      right: 12,
+      ...fade(pos < 88)
+    }
+  }, /*#__PURE__*/React.createElement(Badge, {
+    status: "live"
+  }, labels.after)), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: 0,
+      bottom: 0,
+      left: `${pos}%`,
+      width: 2,
+      marginLeft: -1,
+      background: 'var(--text-primary)',
+      pointerEvents: 'none'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: '50%',
+      left: `${pos}%`,
+      width: 44,
+      height: 44,
+      margin: '-22px 0 0 -22px',
+      boxSizing: 'border-box',
+      border: '1px solid var(--border-strong)',
+      borderRadius: 'var(--radius)',
+      background: 'var(--surface-page)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 6,
+      fontSize: 16,
+      lineHeight: 1,
+      color: 'var(--text-primary)',
+      pointerEvents: 'none'
+    }
+  }, /*#__PURE__*/React.createElement("span", null, "\u2039"), /*#__PURE__*/React.createElement("span", null, "\u203A")), /*#__PURE__*/React.createElement("input", {
+    type: "range",
+    min: "0",
+    max: "100",
+    step: "1",
+    value: pos,
+    onChange: e => setPos(Number(e.target.value)),
+    "aria-label": "Drag to compare before and after",
+    "aria-valuetext": `${pos}% ${labels.before.toLowerCase()}`,
+    style: {
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      margin: 0,
+      opacity: 0,
+      cursor: 'ew-resize'
+    }
+  })), caption && /*#__PURE__*/React.createElement("figcaption", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+      gap: '8px 24px',
+      fontSize: 13,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)'
+    }
+  }, caption.before && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: 'var(--text-primary)',
+      fontWeight: 600
+    }
+  }, labels.before), " \u2014 ", caption.before), caption.after && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: 'var(--text-primary)',
+      fontWeight: 600
+    }
+  }, labels.after), " \u2014 ", caption.after)));
+}
+Object.assign(__ds_scope, { CompareSlider });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/CompareSlider.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/AnnotatedScreen.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useEffect,
+  useRef,
+  useState
+} = React;
+const POP_W = 260;
+const mono = {
+  fontFamily: 'var(--font-mono)',
+  letterSpacing: '0.1em'
+};
+function CalloutBody({
+  c,
+  index,
+  total
+}) {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...mono,
+      fontSize: 11,
+      color: 'var(--text-muted)'
+    }
+  }, String(index + 1).padStart(2, '0'), " / ", String(total).padStart(2, '0')), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flex: 1,
+      height: 1,
+      background: 'var(--border-hairline)'
+    }
+  })), /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: 17,
+      lineHeight: 1.3,
+      fontWeight: 600,
+      letterSpacing: '-0.01em',
+      margin: 0
+    }
+  }, c.title), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 14,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)',
+      margin: 0
+    }
+  }, c.body));
+}
+
+/**
+ * AnnotatedScreen — one screen with up to four numbered markers. Hover,
+ * focus or tap a marker (or its row underneath) to open its callout.
+ * Exactly one is open; the first opens on load. With placement "auto"
+ * the card opens on the side with room and drops under the screen when
+ * neither side fits (phones).
+ */
+function AnnotatedScreen({
+  image,
+  callouts = [],
+  ratio = '9 / 16',
+  width = 340,
+  placement = 'auto',
+  defaultIndex = 0,
+  style,
+  ...rest
+}) {
+  const items = callouts.slice(0, 4);
+  const [active, setActive] = useState(Math.min(defaultIndex, Math.max(0, items.length - 1)));
+  const [side, setSide] = useState(placement === 'left' ? 'left' : 'right');
+  const stageRef = useRef(null);
+  const frameRef = useRef(null);
+  const c = items[active];
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+    const measure = () => {
+      const stage = stageRef.current,
+        frame = frameRef.current;
+      if (!stage || !frame || !c) return;
+      const s = stage.getBoundingClientRect(),
+        f = frame.getBoundingClientRect();
+      const mx = f.left + f.width * c.x / 100;
+      const need = POP_W + 38;
+      const fitsR = s.right - mx >= need,
+        fitsL = mx - s.left >= need;
+      if (placement === 'right') setSide(fitsR ? 'right' : 'inline');else if (placement === 'left') setSide(fitsL ? 'left' : 'inline');else if (c.x > 50) setSide(fitsL ? 'left' : fitsR ? 'right' : 'inline');else setSide(fitsR ? 'right' : fitsL ? 'left' : 'inline');
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, [active, placement, c && c.x]);
+  if (!items.length) return null;
+  const pick = i => () => {
+    if (i !== active) setActive(i);
+  };
+  const top = Math.min(Math.max(c.y, 18), 82);
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    style: {
+      margin: 0,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    ref: stageRef,
+    style: {
+      padding: '56px 24px',
+      background: 'var(--surface-subtle)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    ref: frameRef,
+    style: {
+      position: 'relative',
+      width,
+      maxWidth: '100%'
+    }
+  }, image && image.src ? /*#__PURE__*/React.createElement("img", {
+    src: image.src,
+    alt: image.alt || '',
+    style: {
+      display: 'block',
+      width: '100%',
+      height: 'auto',
+      border: '1px solid var(--border-default)',
+      borderRadius: 'var(--radius)'
+    }
+  }) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      aspectRatio: ratio,
+      border: '1px solid var(--border-default)',
+      borderRadius: 'var(--radius)',
+      background: 'repeating-linear-gradient(135deg, var(--paper) 0 11px, var(--gray-100) 11px 22px)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...mono,
+      fontSize: 11,
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)'
+    }
+  }, "[ Screen ]")), items.map((d, i) => {
+    const on = i === active;
+    return /*#__PURE__*/React.createElement("button", {
+      key: i,
+      type: "button",
+      "aria-label": `Callout ${i + 1}: ${d.title}`,
+      "aria-expanded": on,
+      onMouseEnter: pick(i),
+      onFocus: pick(i),
+      onClick: pick(i),
+      style: {
+        position: 'absolute',
+        left: `${d.x}%`,
+        top: `${d.y}%`,
+        width: 44,
+        height: 44,
+        margin: '-22px 0 0 -22px',
+        padding: 0,
+        border: 0,
+        background: 'transparent',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: 'pointer',
+        zIndex: on ? 3 : 2
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      "aria-hidden": "true",
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 28,
+        height: 28,
+        borderRadius: 'var(--radius-pill)',
+        background: on ? 'var(--green-600)' : 'var(--ink-900)',
+        color: 'var(--paper)',
+        boxShadow: `0 0 0 2px var(--paper)${on ? ', 0 0 0 4px var(--green-600)' : ''}`,
+        ...mono,
+        fontSize: 11,
+        fontWeight: 500,
+        letterSpacing: '0.04em',
+        transition: 'background-color var(--dur-fast, 120ms) var(--ease-out, ease)'
+      }
+    }, String(i + 1).padStart(2, '0')));
+  }), side !== 'inline' && /*#__PURE__*/React.createElement("div", {
+    role: "status",
+    style: {
+      position: 'absolute',
+      top: `${top}%`,
+      transform: 'translateY(-50%)',
+      ...(side === 'left' ? {
+        right: `calc(${100 - c.x}% + 30px)`
+      } : {
+        left: `calc(${c.x}% + 30px)`
+      }),
+      width: POP_W,
+      boxSizing: 'border-box',
+      padding: 20,
+      background: 'var(--surface-page)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      boxShadow: 'var(--shadow-pop)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10,
+      zIndex: 4,
+      pointerEvents: 'none'
+    }
+  }, /*#__PURE__*/React.createElement(CalloutBody, {
+    c: c,
+    index: active,
+    total: items.length
+  })))), side === 'inline' && /*#__PURE__*/React.createElement("div", {
+    role: "status",
+    style: {
+      padding: 20,
+      border: '1px solid var(--border-hairline)',
+      borderTop: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(CalloutBody, {
+    c: c,
+    index: active,
+    total: items.length
+  })), /*#__PURE__*/React.createElement("ol", {
+    "aria-label": "Callouts",
+    style: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderTop: 0
+    }
+  }, items.map((d, i) => {
+    const on = i === active;
+    return /*#__PURE__*/React.createElement("li", {
+      key: i,
+      style: {
+        flex: '1 1 220px',
+        minWidth: 0,
+        background: 'var(--surface-page)'
+      }
+    }, /*#__PURE__*/React.createElement("button", {
+      type: "button",
+      onMouseEnter: pick(i),
+      onFocus: pick(i),
+      onClick: pick(i),
+      "aria-pressed": on,
+      style: {
+        width: '100%',
+        minHeight: 64,
+        boxSizing: 'border-box',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 14,
+        padding: '16px 20px',
+        border: 0,
+        borderTop: `2px solid ${on ? 'var(--green-600)' : 'transparent'}`,
+        background: on ? 'var(--surface-subtle)' : 'var(--surface-page)',
+        color: 'var(--text-primary)',
+        fontFamily: 'var(--font-sans)',
+        cursor: 'pointer',
+        textAlign: 'left'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        ...mono,
+        fontSize: 11,
+        color: 'var(--text-muted)'
+      }
+    }, String(i + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 15,
+        fontWeight: 500
+      }
+    }, d.title)));
+  })));
+}
+Object.assign(__ds_scope, { AnnotatedScreen });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/AnnotatedScreen.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/FlowDiagram.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState
+} = React;
+const {
+  SegmentedControl
+} = __ds_scope;
+const SIZE = {
+  step: [136, 56],
+  decision: [120, 80],
+  exit: [128, 48]
+};
+const INK = 'var(--text-primary)';
+const OFF = 'var(--border-default)';
+
+/* A rounded diamond as a clip path, so decision nodes share the
+   system's 2px-ish softness instead of sharp polygon tips. */
+function diamondPath(w, h, t = 0.12) {
+  const P = [[w / 2, 0], [w, h / 2], [w / 2, h], [0, h / 2]];
+  const pt = (a, b) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+  const f = n => n.toFixed(1);
+  let d = '';
+  P.forEach((v, i) => {
+    const a = pt(v, P[(i + 3) % 4]);
+    const b = pt(v, P[(i + 1) % 4]);
+    d += `${i === 0 ? 'M' : 'L'} ${f(a[0])} ${f(a[1])} Q ${f(v[0])} ${f(v[1])} ${f(b[0])} ${f(b[1])} `;
+  });
+  return `${d}Z`;
+}
+function box(n) {
+  const [dw, dh] = SIZE[n.type] || SIZE.step;
+  const w = n.w || dw,
+    h = n.h || dh;
+  return {
+    x: n.x,
+    y: n.y,
+    w,
+    h,
+    cx: n.x + w / 2,
+    cy: n.y + h / 2,
+    r: n.x + w,
+    b: n.y + h
+  };
+}
+
+/* Orthogonal route: straight when aligned, elbow when the target is
+   further along, down-then-across when it sits below. */
+function route(f, t) {
+  if (Math.abs(f.cy - t.cy) < 2 && t.x >= f.r) return [[f.r, f.cy], [t.x, t.cy]];
+  if (t.x >= f.r) {
+    const mx = (f.r + t.x) / 2;
+    return [[f.r, f.cy], [mx, f.cy], [mx, t.cy], [t.x, t.cy]];
+  }
+  if (t.y >= f.b) {
+    if (Math.abs(f.cx - t.cx) < 2) return [[f.cx, f.b], [t.cx, t.y]];
+    const my = (f.b + t.y) / 2;
+    return [[f.cx, f.b], [f.cx, my], [t.cx, my], [t.cx, t.y]];
+  }
+  return [[f.cx, f.y], [t.cx, t.b]];
+}
+
+/**
+ * FlowDiagram — a journey drawn from data: steps (boxes), decisions
+ * (rounded green diamonds) and exits (dashed boxes), joined by
+ * orthogonal connectors. Name a few paths and the reader can trace each
+ * one; the rest of the diagram fades back.
+ */
+function FlowDiagram({
+  nodes = [],
+  edges = [],
+  paths = [],
+  defaultPath,
+  width,
+  height,
+  title = 'Trace a path',
+  style,
+  ...rest
+}) {
+  const [pathId, setPathId] = useState(defaultPath || paths[0] && paths[0].id);
+  const uid = React.useId ? React.useId().replace(/[^a-zA-Z0-9_-]/g, '') : 'fd';
+  const byId = Object.fromEntries(nodes.map(n => [n.id, box(n)]));
+  const W = width || Math.max(0, ...nodes.map(n => byId[n.id].r)) + 8;
+  const H = height || Math.max(0, ...nodes.map(n => byId[n.id].b)) + 8;
+  const path = paths.find(p => p.id === pathId);
+  const onSet = path ? new Set(path.nodes) : null;
+  const isOn = id => !onSet || onSet.has(id);
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    style: {
+      margin: 0,
+      ...style
+    }
+  }, rest), paths.length > 1 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      flexWrap: 'wrap',
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)'
+    }
+  }, title), /*#__PURE__*/React.createElement(SegmentedControl, {
+    options: paths.map(p => ({
+      label: p.label,
+      value: p.id
+    })),
+    value: pathId,
+    onChange: setPathId
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      overflowX: 'auto',
+      background: 'var(--surface-page)',
+      padding: '40px 24px'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: W,
+      height: H,
+      margin: '0 auto'
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: W,
+    height: H,
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      overflow: 'visible'
+    }
+  }, /*#__PURE__*/React.createElement("defs", null, [['on', INK], ['off', OFF]].map(([k, col]) => /*#__PURE__*/React.createElement("marker", {
+    key: k,
+    id: `${uid}-${k}`,
+    viewBox: "0 0 8 8",
+    refX: "8",
+    refY: "4",
+    markerWidth: "8",
+    markerHeight: "8",
+    markerUnits: "userSpaceOnUse",
+    orient: "auto-start-reverse"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0 0 L8 4 L0 8 Z",
+    fill: col
+  })))), edges.map((e, i) => ({
+    e,
+    i,
+    on: isOn(e.from) && isOn(e.to)
+  })).sort((a, b) => Number(a.on) - Number(b.on)).map(({
+    e,
+    i,
+    on
+  }) => {
+    const f = byId[e.from],
+      t = byId[e.to];
+    if (!f || !t) return null;
+    const pts = e.points || route(f, t);
+    return /*#__PURE__*/React.createElement("polyline", {
+      key: i,
+      points: pts.map(p => p.join(',')).join(' '),
+      fill: "none",
+      stroke: on ? INK : OFF,
+      strokeWidth: on && onSet ? 2 : 1,
+      markerEnd: `url(#${uid}-${on ? 'on' : 'off'})`,
+      style: {
+        transition: 'stroke var(--dur-base, 180ms) var(--ease-out, ease)'
+      }
+    });
+  })), nodes.map(n => {
+    const b = byId[n.id];
+    const on = isOn(n.id);
+    const base = {
+      position: 'absolute',
+      left: b.x,
+      top: b.y,
+      width: b.w,
+      height: b.h,
+      boxSizing: 'border-box',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      padding: 8,
+      fontSize: 14,
+      fontWeight: 500,
+      lineHeight: 1.25,
+      color: on ? INK : 'var(--text-faint)',
+      transition: 'color var(--dur-base, 180ms) var(--ease-out, ease), border-color var(--dur-base, 180ms), background-color var(--dur-base, 180ms)'
+    };
+    if (n.type === 'decision') {
+      return /*#__PURE__*/React.createElement("div", {
+        key: n.id,
+        style: {
+          ...base,
+          padding: '8px 18px',
+          background: on ? 'var(--green-tint-light)' : 'var(--surface-subtle)',
+          clipPath: `path('${diamondPath(b.w, b.h)}')`
+        }
+      }, n.label);
+    }
+    return /*#__PURE__*/React.createElement("div", {
+      key: n.id,
+      style: {
+        ...base,
+        background: 'var(--surface-page)',
+        borderRadius: 'var(--radius)',
+        border: `1px ${n.type === 'exit' ? 'dashed' : 'solid'} ${on ? 'var(--border-strong)' : 'var(--border-hairline)'}`
+      }
+    }, n.label);
+  }))), path && path.description && /*#__PURE__*/React.createElement("figcaption", {
+    role: "status",
+    style: {
+      padding: '16px 20px',
+      border: '1px solid var(--border-hairline)',
+      borderTop: 0,
+      fontSize: 14,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)'
+    }
+  }, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: 'var(--text-primary)',
+      fontWeight: 600
+    }
+  }, path.label, "."), " ", path.description));
+}
+Object.assign(__ds_scope, { FlowDiagram });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/FlowDiagram.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/SectionHeader.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * SectionHeader — the case-study section opener: a mono eyebrow
+ * ("04 · Research"), a sentence-case headline and an optional lead.
+ */
+function SectionHeader({
+  number,
+  eyebrow,
+  title,
+  lead,
+  as = 'h2',
+  id,
+  style,
+  ...rest
+}) {
+  const H = as;
+  const label = [number, eyebrow].filter(Boolean).join(' · ');
+  return /*#__PURE__*/React.createElement("header", _extends({
+    id: id,
+    style: {
+      ...style
+    }
+  }, rest), label && /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      fontWeight: 500,
+      letterSpacing: 'var(--tracking-caps)',
+      textTransform: 'uppercase',
+      color: 'var(--text-primary)',
+      marginBottom: 20
+    }
+  }, label), /*#__PURE__*/React.createElement(H, {
+    style: {
+      fontSize: 40,
+      lineHeight: 1.05,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-tight)',
+      margin: 0,
+      textWrap: 'balance'
+    }
+  }, title), lead && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 18,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)',
+      margin: '24px 0 0',
+      maxWidth: 760
+    }
+  }, lead));
+}
+Object.assign(__ds_scope, { SectionHeader });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/SectionHeader.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/CaseDetails.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const label = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: 11,
+  fontWeight: 500,
+  letterSpacing: 'var(--tracking-caps)',
+  textTransform: 'uppercase',
+  margin: 0
+};
+function Cell({
+  item,
+  basis
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: `1 1 ${basis}px`,
+      minWidth: 0,
+      boxSizing: 'border-box',
+      padding: 24,
+      background: 'var(--surface-page)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      ...label,
+      color: 'var(--text-primary)'
+    }
+  }, item.label), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 14,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)',
+      margin: 0
+    }
+  }, item.value));
+}
+
+/**
+ * CaseDetails — the spec-sheet table under the cover image: a header
+ * row, four short facts (Role, Team, Timeline, Tools) and three longer
+ * ones (What I did, Impact, Constraints) on a hairline grid.
+ */
+function CaseDetails({
+  title = 'Case details',
+  facts = [],
+  details = [],
+  attached = true,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("section", _extends({
+    "aria-label": title,
+    style: {
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderTop: attached ? 0 : undefined
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '16px 24px',
+      background: 'var(--surface-page)'
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...label,
+      color: 'var(--text-muted)'
+    }
+  }, title)), facts.length > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1
+    }
+  }, facts.map((f, i) => /*#__PURE__*/React.createElement(Cell, {
+    key: i,
+    item: f,
+    basis: 200
+  }))), details.length > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1
+    }
+  }, details.map((f, i) => /*#__PURE__*/React.createElement(Cell, {
+    key: i,
+    item: f,
+    basis: 280
+  })))));
+}
+Object.assign(__ds_scope, { CaseDetails });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/CaseDetails.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/OutcomeStrip.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * OutcomeStrip — three or four outcomes in one hairline row. Works with
+ * real numbers ("+38%") or qualitative shifts ("Branch → app") when the
+ * numbers are under NDA. A `live` item gets the reserved green dot.
+ */
+function OutcomeStrip({
+  items = [],
+  label = 'Outcomes',
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("ul", _extends({
+    "aria-label": label,
+    style: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      overflow: 'hidden',
+      ...style
+    }
+  }, rest), items.map((it, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    style: {
+      flex: '1 1 200px',
+      minWidth: 0,
+      padding: '28px 24px',
+      background: 'var(--surface-page)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      letterSpacing: 'var(--tracking-caps)',
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)'
+    }
+  }, it.label), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      fontSize: 26,
+      lineHeight: 1.15,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-tight)',
+      color: 'var(--text-primary)'
+    }
+  }, it.live && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      width: 10,
+      height: 10,
+      flexShrink: 0,
+      borderRadius: 'var(--radius-pill)',
+      background: 'var(--green-600)'
+    }
+  }), it.value), it.note && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      lineHeight: 1.5,
+      color: 'var(--text-secondary)'
+    }
+  }, it.note))));
+}
+Object.assign(__ds_scope, { OutcomeStrip });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/OutcomeStrip.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/DecisionRow.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  Tag
+} = __ds_scope;
+const placeholder = {
+  aspectRatio: '9 / 16',
+  border: '1px solid var(--border-hairline)',
+  borderRadius: 'var(--radius)',
+  background: 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
+};
+
+/**
+ * DecisionRow — one design decision with the screen that shows it:
+ * screen on the left, number + headline + reasoning on the right.
+ * Stacks screen-first on narrow viewports.
+ */
+function DecisionRow({
+  number,
+  title,
+  tag,
+  children,
+  media,
+  mediaWidth = 280,
+  divider = true,
+  style,
+  ...rest
+}) {
+  let visual = media;
+  if (media && media.src) {
+    visual = /*#__PURE__*/React.createElement("img", {
+      src: media.src,
+      alt: media.alt || '',
+      style: {
+        display: 'block',
+        width: '100%',
+        height: 'auto',
+        border: '1px solid var(--border-hairline)',
+        borderRadius: 'var(--radius)'
+      }
+    });
+  } else if (!media) {
+    visual = /*#__PURE__*/React.createElement("div", {
+      style: placeholder
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 11,
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+        color: 'var(--text-muted)'
+      }
+    }, "[ Screen ]"));
+  }
+  return /*#__PURE__*/React.createElement("article", _extends({
+    style: {
+      paddingTop: divider ? 40 : 0,
+      borderTop: divider ? '1px solid var(--border-hairline)' : 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '32px 48px',
+      alignItems: 'flex-start',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: `0 1 ${mediaWidth}px`,
+      minWidth: Math.min(220, mediaWidth),
+      maxWidth: '100%'
+    }
+  }, visual), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: '1 1 420px',
+      minWidth: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, number && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 12,
+      letterSpacing: '0.1em',
+      color: 'var(--text-muted)'
+    }
+  }, number), tag && /*#__PURE__*/React.createElement(Tag, {
+    tone: "subtle",
+    size: "sm"
+  }, tag)), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontSize: 26,
+      lineHeight: 1.15,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-tight)',
+      margin: 0
+    }
+  }, title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 16,
+      lineHeight: 1.65,
+      color: 'var(--text-secondary)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, children)));
+}
+Object.assign(__ds_scope, { DecisionRow });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/DecisionRow.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/ReasoningChain.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * ReasoningChain — a short chain of reasoning in one hairline row:
+ * Hypothesis → Finding → Decision in Research, or Considered → Chose →
+ * Why under a Solution decision.
+ */
+function ReasoningChain({
+  steps = [],
+  label = 'Reasoning',
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("ol", _extends({
+    "aria-label": label,
+    style: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      overflow: 'hidden',
+      ...style
+    }
+  }, rest), steps.map((s, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    style: {
+      flex: '1 1 260px',
+      minWidth: 0,
+      boxSizing: 'border-box',
+      padding: '28px 24px',
+      background: 'var(--surface-page)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      fontWeight: 500,
+      letterSpacing: 'var(--tracking-caps)',
+      textTransform: 'uppercase',
+      color: 'var(--text-primary)'
+    }
+  }, i > 0 ? '→ ' : '', s.label), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 15,
+      lineHeight: 1.6,
+      color: 'var(--text-secondary)',
+      margin: 0
+    }
+  }, s.text))));
+}
+Object.assign(__ds_scope, { ReasoningChain });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ReasoningChain.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/ReframeQuote.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * ReframeQuote — the one insight that changed how the problem was
+ * framed, set large and centred between hairlines, with its source and
+ * the "so what". Once per case.
+ */
+function ReframeQuote({
+  source,
+  quote,
+  soWhat,
+  themes = [],
+  style,
+  ...rest
+}) {
+  const mono = {
+    fontFamily: 'var(--font-mono)',
+    fontSize: 11,
+    fontWeight: 500,
+    letterSpacing: 'var(--tracking-caps)',
+    textTransform: 'uppercase',
+    color: 'var(--text-muted)'
+  };
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    style: {
+      margin: '0 auto',
+      padding: '56px 24px',
+      maxWidth: 880,
+      borderTop: '1px solid var(--border-hairline)',
+      borderBottom: '1px solid var(--border-hairline)',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 24,
+      textAlign: 'center',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      fontSize: 96,
+      lineHeight: 0.6,
+      fontWeight: 800,
+      color: 'var(--gray-200)',
+      height: 40
+    }
+  }, "\u201C"), source && /*#__PURE__*/React.createElement("span", {
+    style: mono
+  }, source), /*#__PURE__*/React.createElement("blockquote", {
+    style: {
+      margin: 0,
+      fontSize: 40,
+      lineHeight: 1.15,
+      fontWeight: 500,
+      letterSpacing: 'var(--tracking-tight)',
+      textWrap: 'balance'
+    }
+  }, quote), themes.length > 0 && /*#__PURE__*/React.createElement("ul", {
+    "aria-label": "Themes",
+    style: {
+      listStyle: 'none',
+      margin: '8px 0 0',
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      gap: '8px 16px',
+      ...mono,
+      fontWeight: 400
+    }
+  }, themes.map((t, i) => /*#__PURE__*/React.createElement(React.Fragment, {
+    key: i
+  }, i > 0 && /*#__PURE__*/React.createElement("li", {
+    "aria-hidden": "true",
+    style: {
+      color: 'var(--gray-300)'
+    }
+  }, "\xB7"), /*#__PURE__*/React.createElement("li", null, t)))), soWhat && /*#__PURE__*/React.createElement("figcaption", {
+    style: {
+      marginTop: themes.length ? -12 : 0,
+      fontSize: 18,
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)',
+      textWrap: 'balance'
+    }
+  }, soWhat));
+}
+Object.assign(__ds_scope, { ReframeQuote });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ReframeQuote.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/StateList.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * StateList — the states a step was designed for, as static mono chips
+ * (Empty field, Code expired, Timeout…). Shows coverage without a
+ * screen per state. Not interactive.
+ */
+function StateList({
+  states = [],
+  countLabel,
+  style,
+  ...rest
+}) {
+  const heading = countLabel === undefined ? `${states.length} states` : countLabel;
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      ...style
+    }
+  }, rest), heading && /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'block',
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)',
+      marginBottom: 12
+    }
+  }, heading), /*#__PURE__*/React.createElement("ul", {
+    style: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 8
+    }
+  }, states.map((s, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    style: {
+      padding: '6px 10px',
+      border: '1px solid var(--border-default)',
+      borderRadius: 'var(--radius)',
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      letterSpacing: '0.04em',
+      color: 'var(--text-primary)'
+    }
+  }, s))));
+}
+Object.assign(__ds_scope, { StateList });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/StateList.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/CaseNav.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState
+} = React;
+function Link({
+  item,
+  dir,
+  onNavigate
+}) {
+  const [hover, setHover] = useState(false);
+  const [focus, setFocus] = useState(false);
+  const next = dir === 'next';
+  const arrow = /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      display: 'inline-block',
+      fontSize: 18,
+      lineHeight: 1,
+      transform: `translateX(${hover ? next ? 4 : -4 : 0}px)`,
+      transition: 'transform var(--dur-base, 180ms) var(--ease-out, ease)'
+    }
+  }, next ? '›' : '‹');
+  return /*#__PURE__*/React.createElement("a", {
+    href: item.href || '#',
+    onClick: onNavigate ? e => onNavigate(item, dir, e) : undefined,
+    onMouseEnter: () => setHover(true),
+    onMouseLeave: () => setHover(false),
+    onFocus: () => setFocus(true),
+    onBlur: () => setFocus(false),
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      padding: '28px 0',
+      marginLeft: next ? 'auto' : 0,
+      textDecoration: 'none',
+      textAlign: next ? 'right' : 'left',
+      color: hover ? 'var(--text-primary)' : 'var(--text-secondary)',
+      outline: focus ? 'var(--ring-width, 2px) solid var(--ring)' : 'none',
+      outlineOffset: 'var(--ring-offset, 2px)',
+      transition: 'color var(--dur-fast, 120ms) var(--ease-out, ease)'
+    }
+  }, !next && arrow, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)'
+    }
+  }, next ? 'Next' : 'Previous'), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 15,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-snug)'
+    }
+  }, item.title)), next && arrow);
+}
+
+/**
+ * CaseNav — previous / next case at the end of a case study, so the
+ * reader moves on instead of bouncing. Omit `prev` on the first case.
+ */
+function CaseNav({
+  prev,
+  next,
+  onNavigate,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("nav", _extends({
+    "aria-label": "More cases",
+    style: {
+      borderTop: '1px solid var(--border-hairline)',
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexWrap: 'wrap',
+      gap: 16,
+      ...style
+    }
+  }, rest), prev && /*#__PURE__*/React.createElement(Link, {
+    item: prev,
+    dir: "prev",
+    onNavigate: onNavigate
+  }), next && /*#__PURE__*/React.createElement(Link, {
+    item: next,
+    dir: "next",
+    onNavigate: onNavigate
+  }));
+}
+Object.assign(__ds_scope, { CaseNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/CaseNav.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/NumberedCards.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * NumberedCards — numbered title + body cards on a hairline grid. Used
+ * for challenge constraints, research methods and reflection takeaways.
+ */
+function NumberedCards({
+  items = [],
+  minWidth = 260,
+  label,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("ol", _extends({
+    "aria-label": label,
+    style: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      overflow: 'hidden',
+      ...style
+    }
+  }, rest), items.map((it, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    style: {
+      flex: `1 1 ${minWidth}px`,
+      minWidth: 0,
+      boxSizing: 'border-box',
+      padding: 32,
+      background: 'var(--surface-page)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 12,
+      letterSpacing: '0.1em',
+      color: 'var(--text-muted)'
+    }
+  }, it.number || String(i + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontSize: 20,
+      lineHeight: 1.25,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-snug)',
+      margin: 0
+    }
+  }, it.title), it.body && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 15,
+      lineHeight: 1.6,
+      color: 'var(--text-secondary)',
+      margin: 0
+    }
+  }, it.body))));
+}
+Object.assign(__ds_scope, { NumberedCards });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/NumberedCards.jsx", error: String((e && e.message) || e) }); }
+
+// components/case/Callout.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/**
+ * Callout — an aside with a mono label column on a sunken tint and the
+ * story beside it. For key findings, systems notes and other context
+ * that sits next to the main narrative.
+ */
+function Callout({
+  label,
+  children,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("aside", _extends({
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 1,
+      background: 'var(--border-hairline)',
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      overflow: 'hidden',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: '0 1 280px',
+      minWidth: 0,
+      boxSizing: 'border-box',
+      padding: '32px 28px',
+      background: 'var(--surface-subtle)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      fontWeight: 500,
+      letterSpacing: 'var(--tracking-caps)',
+      textTransform: 'uppercase',
+      color: 'var(--text-primary)'
+    }
+  }, label)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: '1 1 480px',
+      minWidth: 0,
+      boxSizing: 'border-box',
+      padding: '32px 28px',
+      background: 'var(--surface-page)',
+      fontSize: 16,
+      lineHeight: 1.65,
+      color: 'var(--text-secondary)'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { Callout });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/Callout.jsx", error: String((e && e.message) || e) }); }
+
 // ui_kits/portfolio/AboutScreen.jsx
 try { (() => {
 /* About — bio, an available-for-work band, FAQ, and a contact dialog. */
@@ -2537,5 +4354,37 @@ __ds_ns.Drawer = __ds_scope.Drawer;
 __ds_ns.Menu = __ds_scope.Menu;
 
 __ds_ns.Modal = __ds_scope.Modal;
+
+__ds_ns.ProgressRing = __ds_scope.ProgressRing;
+
+__ds_ns.SectionNav = __ds_scope.SectionNav;
+
+__ds_ns.ReadingBar = __ds_scope.ReadingBar;
+
+__ds_ns.CompareSlider = __ds_scope.CompareSlider;
+
+__ds_ns.AnnotatedScreen = __ds_scope.AnnotatedScreen;
+
+__ds_ns.FlowDiagram = __ds_scope.FlowDiagram;
+
+__ds_ns.SectionHeader = __ds_scope.SectionHeader;
+
+__ds_ns.CaseDetails = __ds_scope.CaseDetails;
+
+__ds_ns.OutcomeStrip = __ds_scope.OutcomeStrip;
+
+__ds_ns.DecisionRow = __ds_scope.DecisionRow;
+
+__ds_ns.ReasoningChain = __ds_scope.ReasoningChain;
+
+__ds_ns.ReframeQuote = __ds_scope.ReframeQuote;
+
+__ds_ns.StateList = __ds_scope.StateList;
+
+__ds_ns.CaseNav = __ds_scope.CaseNav;
+
+__ds_ns.NumberedCards = __ds_scope.NumberedCards;
+
+__ds_ns.Callout = __ds_scope.Callout;
 
 })();
