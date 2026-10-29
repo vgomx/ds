@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components" viewport="1100x5200" name="Case study — 16 modules" subtitle="Section nav, compare slider, annotated screen, flow diagram and the content modules" -->
+<!-- @dsCard group="Components" viewport="1100x5200" name="Case study — 17 modules" subtitle="Section nav, compare slider, annotated screen, flow diagram and the content modules" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +30,7 @@
   <div class="block"><div class="lbl">CaseNav</div><div id="r-CaseNav"></div></div>
   <div class="block"><div class="lbl">NumberedCards</div><div id="r-NumberedCards"></div></div>
   <div class="block"><div class="lbl">Callout</div><div id="r-Callout"></div></div>
+  <div class="block"><div class="lbl">ImageCarousel</div><div id="r-ImageCarousel"></div></div>
 </div>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
@@ -190,6 +191,13 @@
     return h(Callout, { label: '[Callout label]' }, '[A supporting story — systems, process or team impact.]');
   }
   ReactDOM.createRoot(document.getElementById('r-Callout')).render(h(Demo));
+})();
+(function () {
+  const { ImageCarousel } = NS;
+  function Demo() {
+    return h('div', { style: { width: 280 } }, h(ImageCarousel, { startIndex: 1, label: 'Walkthrough', images: [{ label: 'Benefits' }, { label: 'Get ready' }, { label: "Let's get started" }] }));
+  }
+  ReactDOM.createRoot(document.getElementById('r-ImageCarousel')).render(h(Demo));
 })();
 </script>
 </body>

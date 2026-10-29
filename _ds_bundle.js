@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"ba04182457a4","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"a595a87e4811","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"d39f2bed5cc3","components/case/CaseDetails.jsx":"39cff88d70e8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"e2c86384f7f8","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"c6f8d0524e19"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"},{"name":"ImageCarousel","sourcePath":"components/case/ImageCarousel.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"ba04182457a4","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"a595a87e4811","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"d39f2bed5cc3","components/case/CaseDetails.jsx":"39cff88d70e8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"e2c86384f7f8","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"c6f8d0524e19","components/case/ImageCarousel.jsx":"1982518e1d6f"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -3442,6 +3442,181 @@ function Callout({
 Object.assign(__ds_scope, { Callout });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/Callout.jsx", error: String((e && e.message) || e) }); }
 
+// components/case/ImageCarousel.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState
+} = React;
+const placeholder = 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)';
+
+/**
+ * ImageCarousel — a short sequence of screens in one slot: a walkthrough,
+ * a multi-step state, a before → during → after. One frame, ‹ › buttons,
+ * bar indicators and a mono "02 / 03 · Label" caption. Not autoplaying.
+ */
+function ImageCarousel({
+  images = [],
+  startIndex = 0,
+  ratio = '9 / 20',
+  label = 'Screens',
+  style,
+  ...rest
+}) {
+  const n = Math.max(images.length, 1);
+  const [i, setI] = useState(Math.min(Math.max(startIndex, 0), n - 1));
+  const go = k => setI(Math.max(0, Math.min(n - 1, k)));
+  const navBtn = dis => ({
+    width: 44,
+    height: 44,
+    flexShrink: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 0,
+    border: `1px solid ${dis ? 'var(--border-hairline)' : 'var(--border-default)'}`,
+    borderRadius: 'var(--radius)',
+    background: 'var(--surface-page)',
+    color: dis ? 'var(--text-disabled)' : 'var(--text-primary)',
+    fontSize: 18,
+    lineHeight: 1,
+    cursor: dis ? 'default' : 'pointer'
+  });
+  const cur = images[i] || {};
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    "aria-roledescription": "carousel",
+    "aria-label": label,
+    style: {
+      margin: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12,
+      ...style
+    },
+    onKeyDown: e => {
+      if (e.key === 'ArrowLeft') go(i - 1);
+      if (e.key === 'ArrowRight') go(i + 1);
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      overflow: 'hidden',
+      aspectRatio: ratio,
+      border: '1px solid var(--border-hairline)',
+      borderRadius: 'var(--radius)',
+      background: 'var(--surface-page)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      width: `${n * 100}%`,
+      height: '100%',
+      transform: `translateX(-${i * 100 / n}%)`,
+      transition: 'transform var(--dur-slow, 300ms) var(--ease-out, ease)'
+    }
+  }, (images.length ? images : [{}]).map((img, k) => img.src ? /*#__PURE__*/React.createElement("img", {
+    key: k,
+    src: img.src,
+    alt: img.alt || '',
+    "aria-hidden": k !== i,
+    style: {
+      display: 'block',
+      flex: `0 0 ${100 / n}%`,
+      width: `${100 / n}%`,
+      height: '100%',
+      objectFit: 'cover'
+    }
+  }) : /*#__PURE__*/React.createElement("div", {
+    key: k,
+    "aria-hidden": k !== i,
+    style: {
+      flex: `0 0 ${100 / n}%`,
+      height: '100%',
+      background: placeholder,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: 'var(--font-mono)',
+      fontSize: 11,
+      letterSpacing: '0.08em',
+      textTransform: 'uppercase',
+      color: 'var(--text-muted)'
+    }
+  }, "[ ", img.label || 'Screen', " ]")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    "aria-label": "Previous",
+    disabled: i === 0,
+    onClick: () => go(i - 1),
+    style: navBtn(i === 0)
+  }, "\u2039"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    role: "tablist",
+    "aria-label": label,
+    style: {
+      display: 'flex',
+      gap: 2
+    }
+  }, (images.length ? images : [{}]).map((img, k) => /*#__PURE__*/React.createElement("button", {
+    key: k,
+    type: "button",
+    role: "tab",
+    "aria-selected": k === i,
+    "aria-label": img.label || `Screen ${k + 1}`,
+    onClick: () => go(k),
+    style: {
+      width: 32,
+      height: 24,
+      padding: 0,
+      border: 0,
+      background: 'transparent',
+      display: 'flex',
+      alignItems: 'center',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      display: 'block',
+      width: '100%',
+      height: 2,
+      background: k === i ? 'var(--text-primary)' : 'var(--border-default)',
+      transition: 'background-color var(--dur-base, 180ms) var(--ease-out, ease)'
+    }
+  })))), /*#__PURE__*/React.createElement("span", {
+    "aria-live": "polite",
+    style: {
+      textAlign: 'center',
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '0.1em',
+      textTransform: 'uppercase',
+      color: 'var(--text-secondary)'
+    }
+  }, String(i + 1).padStart(2, '0'), " / ", String(n).padStart(2, '0'), cur.label ? ` · ${cur.label}` : '')), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    "aria-label": "Next",
+    disabled: i === n - 1,
+    onClick: () => go(i + 1),
+    style: navBtn(i === n - 1)
+  }, "\u203A")));
+}
+Object.assign(__ds_scope, { ImageCarousel });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ImageCarousel.jsx", error: String((e && e.message) || e) }); }
+
 // ui_kits/portfolio/AboutScreen.jsx
 try { (() => {
 /* About — bio, an available-for-work band, FAQ, and a contact dialog. */
@@ -4386,5 +4561,7 @@ __ds_ns.CaseNav = __ds_scope.CaseNav;
 __ds_ns.NumberedCards = __ds_scope.NumberedCards;
 
 __ds_ns.Callout = __ds_scope.Callout;
+
+__ds_ns.ImageCarousel = __ds_scope.ImageCarousel;
 
 })();
