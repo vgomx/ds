@@ -10,7 +10,7 @@ StickySteps — a sequence of screens told as you scroll. The screen pins on the
 />
 ```
 
-- **Use for** two to five screens that belong to one story (a walkthrough, the parts of a flow) when each needs a sentence or two of its own. For a quick look without text per screen, use `ImageCarousel`.
+- **Use for** two to five screens that belong to one story (a walkthrough, the parts of a flow) when each needs a sentence or two of its own. **Rule:** on a case page this replaces `ImageCarousel`; keep the carousel for compact spots and for boards that don't scroll.
 - **Active step:** the one crossing the middle of the viewport. Its text is full strength; the others sit at 35%. The bar under the screen marks the position.
 - **Sticky offset:** `--case-sticky-top` (default 24px) so the screen clears a sticky header.
 - **Narrow viewports (<900px):** no pinning; each step shows its own screen above its text.

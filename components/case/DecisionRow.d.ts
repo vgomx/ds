@@ -16,7 +16,9 @@ export interface DecisionRowProps {
   mediaWidth?: number;
   /** Hairline above the row. @default true */
   divider?: boolean;
-  /** Keep the screen in view while longer text scrolls past. Offset from the CSS variable --case-sticky-top (default 24px). @default true */
+  /** The shorter column sticks while the taller one scrolls past: text beside a long board, or the screen beside long reasoning. Offset from the CSS variable --case-sticky-top (default 24px). @default true */
+  sticky?: boolean;
+  /** @deprecated Use `sticky`. */
   stickyMedia?: boolean;
   style?: React.CSSProperties;
 }
