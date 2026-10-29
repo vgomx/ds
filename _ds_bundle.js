@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"},{"name":"ImageCarousel","sourcePath":"components/case/ImageCarousel.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"6618eb5a0a04","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"356798a125fe","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"903a73a49f31","components/case/CaseDetails.jsx":"a9cb554a64c8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"132fdb5d3699","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"ccfd76496129","components/case/ImageCarousel.jsx":"1982518e1d6f"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"},{"name":"ImageCarousel","sourcePath":"components/case/ImageCarousel.jsx"},{"name":"StickySteps","sourcePath":"components/case/StickySteps.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"6618eb5a0a04","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"356798a125fe","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"903a73a49f31","components/case/CaseDetails.jsx":"a9cb554a64c8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"132fdb5d3699","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"ccfd76496129","components/case/ImageCarousel.jsx":"1982518e1d6f","components/case/StickySteps.jsx":"0859210e2635"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -3643,6 +3643,245 @@ function ImageCarousel({
 Object.assign(__ds_scope, { ImageCarousel });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/ImageCarousel.jsx", error: String((e && e.message) || e) }); }
 
+// components/case/StickySteps.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useEffect,
+  useRef,
+  useState
+} = React;
+const stripes = 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)';
+const mono = {
+  fontFamily: 'var(--font-mono)',
+  textTransform: 'uppercase'
+};
+
+/* Below 900px there is no room for a pinned screen beside the text, so
+   the steps stack, each with its own screen. Renders stacked on the
+   server and first paint. */
+function useWide(query) {
+  const [wide, setWide] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return undefined;
+    const mq = window.matchMedia(query);
+    const update = () => setWide(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, [query]);
+  return wide;
+}
+function Screen({
+  image,
+  ratio,
+  label
+}) {
+  if (image && image.src) {
+    return /*#__PURE__*/React.createElement("img", {
+      src: image.src,
+      alt: image.alt || '',
+      loading: "lazy",
+      decoding: "async",
+      style: {
+        display: 'block',
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        objectPosition: 'top'
+      }
+    });
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: '100%',
+      height: '100%',
+      aspectRatio: ratio,
+      background: stripes,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...mono,
+      fontSize: 11,
+      letterSpacing: '0.08em',
+      color: 'var(--text-muted)'
+    }
+  }, "[ ", label || 'Screen', " ]"));
+}
+
+/**
+ * StickySteps — a short sequence of screens told as scrolling steps.
+ * The screen stays pinned on the left while the steps scroll past on the
+ * right; whichever step crosses the middle of the viewport is active,
+ * its screen cross-fades in and the other steps fade back. Stacks on
+ * narrow viewports, one screen per step.
+ */
+function StickySteps({
+  steps = [],
+  mediaWidth = 300,
+  ratio = '9 / 20',
+  label = 'Screens',
+  stepSpace = '28vh',
+  style,
+  ...rest
+}) {
+  const wide = useWide('(min-width: 900px)');
+  const [active, setActive] = useState(0);
+  const refs = useRef([]);
+  useEffect(() => {
+    if (!wide || typeof IntersectionObserver === 'undefined') return undefined;
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) setActive(Number(e.target.dataset.step));
+      });
+    }, {
+      rootMargin: '-45% 0px -45% 0px'
+    });
+    refs.current.forEach(el => el && io.observe(el));
+    return () => io.disconnect();
+  }, [wide, steps.length]);
+  const eyebrow = (s, i) => /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...mono,
+      fontSize: 11,
+      letterSpacing: '0.1em',
+      color: 'var(--text-muted)'
+    }
+  }, String(i + 1).padStart(2, '0'), s.eyebrow ? ` · ${s.eyebrow}` : '');
+  const text = (s, i) => /*#__PURE__*/React.createElement(React.Fragment, null, eyebrow(s, i), /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: 22,
+      lineHeight: 1.2,
+      fontWeight: 600,
+      letterSpacing: 'var(--tracking-snug)',
+      margin: 0
+    }
+  }, s.title), s.body && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 16,
+      lineHeight: 1.65,
+      color: 'var(--text-secondary)',
+      margin: 0
+    }
+  }, s.body));
+  const frame = {
+    position: 'relative',
+    overflow: 'hidden',
+    aspectRatio: ratio,
+    border: '1px solid var(--border-hairline)',
+    borderRadius: 'var(--radius)',
+    background: 'var(--surface-page)'
+  };
+  if (!wide) {
+    return /*#__PURE__*/React.createElement("ol", _extends({
+      "aria-label": label,
+      style: {
+        listStyle: 'none',
+        margin: 0,
+        padding: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 48,
+        ...style
+      }
+    }, rest), steps.map((s, i) => /*#__PURE__*/React.createElement("li", {
+      key: i,
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 12
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        ...frame,
+        width: '100%',
+        maxWidth: mediaWidth,
+        marginBottom: 8
+      }
+    }, /*#__PURE__*/React.createElement(Screen, {
+      image: s.image,
+      ratio: ratio,
+      label: s.eyebrow || s.title
+    })), text(s, i))));
+  }
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      gap: 64,
+      alignItems: 'flex-start',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: `0 0 ${mediaWidth}px`,
+      position: 'sticky',
+      top: 'var(--case-sticky-top, 24px)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    "aria-live": "polite",
+    style: frame
+  }, steps.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    "aria-hidden": i !== active,
+    style: {
+      position: 'absolute',
+      inset: 0,
+      opacity: i === active ? 1 : 0,
+      transition: 'opacity var(--dur-slow, 300ms) var(--ease-out, ease)'
+    }
+  }, /*#__PURE__*/React.createElement(Screen, {
+    image: s.image,
+    ratio: ratio,
+    label: s.eyebrow || s.title
+  })))), /*#__PURE__*/React.createElement("div", {
+    role: "presentation",
+    style: {
+      display: 'flex',
+      gap: 2,
+      marginTop: 12
+    }
+  }, steps.map((_, i) => /*#__PURE__*/React.createElement("span", {
+    key: i,
+    style: {
+      flex: 1,
+      height: 2,
+      background: i === active ? 'var(--text-primary)' : 'var(--border-default)',
+      transition: 'background-color var(--dur-base, 180ms) var(--ease-out, ease)'
+    }
+  })))), /*#__PURE__*/React.createElement("ol", {
+    "aria-label": label,
+    style: {
+      flex: '1 1 0',
+      minWidth: 0,
+      listStyle: 'none',
+      margin: 0,
+      padding: 0
+    }
+  }, steps.map((s, i) => /*#__PURE__*/React.createElement("li", {
+    key: i,
+    ref: el => {
+      refs.current[i] = el;
+    },
+    "data-step": i,
+    "aria-current": i === active ? 'step' : undefined,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12,
+      maxWidth: 520,
+      paddingTop: i === 0 ? 0 : stepSpace,
+      paddingBottom: i === steps.length - 1 ? stepSpace : 0,
+      opacity: i === active ? 1 : 0.35,
+      transition: 'opacity var(--dur-slow, 300ms) var(--ease-out, ease)'
+    }
+  }, text(s, i)))));
+}
+Object.assign(__ds_scope, { StickySteps });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/StickySteps.jsx", error: String((e && e.message) || e) }); }
+
 // ui_kits/portfolio/AboutScreen.jsx
 try { (() => {
 /* About — bio, an available-for-work band, FAQ, and a contact dialog. */
@@ -4589,5 +4828,7 @@ __ds_ns.NumberedCards = __ds_scope.NumberedCards;
 __ds_ns.Callout = __ds_scope.Callout;
 
 __ds_ns.ImageCarousel = __ds_scope.ImageCarousel;
+
+__ds_ns.StickySteps = __ds_scope.StickySteps;
 
 })();
