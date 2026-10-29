@@ -31,6 +31,7 @@
   <div class="block"><div class="lbl">NumberedCards</div><div id="r-NumberedCards"></div></div>
   <div class="block"><div class="lbl">Callout</div><div id="r-Callout"></div></div>
   <div class="block"><div class="lbl">ImageCarousel</div><div id="r-ImageCarousel"></div></div>
+  <div class="block"><div class="lbl">StickySteps</div><div id="r-StickySteps"></div></div>
 </div>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
@@ -198,6 +199,13 @@
     return h('div', { style: { width: 280 } }, h(ImageCarousel, { startIndex: 1, label: 'Walkthrough', images: [{ label: 'Benefits' }, { label: 'Get ready' }, { label: "Let's get started" }] }));
   }
   ReactDOM.createRoot(document.getElementById('r-ImageCarousel')).render(h(Demo));
+{
+  const { StickySteps } = NS;
+  ReactDOM.createRoot(document.getElementById('r-StickySteps')).render(h(StickySteps, { mediaWidth: 200, stepSpace: '120px', steps: [
+    { eyebrow: 'Benefits', title: 'Why it is worth opening', body: 'What the account offers, before anything is asked.' },
+    { eyebrow: 'Get ready', title: 'What can stop you', body: 'The requirements behind the hard stops, up front.' },
+    { eyebrow: "Let's get started", title: 'Agreement before data', body: 'The compliance conditions become declarations to confirm.' } ] }));
+}
 })();
 </script>
 </body>
