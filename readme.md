@@ -65,6 +65,7 @@ A working design system for **Vitor Gomes**, a product designer's portfolio and 
 - `components/navigation/` — **Breadcrumb, Pagination, Stepper**
 - `components/feedback/` — **ProgressBar, Spinner, Skeleton, Accordion, Tooltip**
 - `components/overlay/` — **Menu, Modal, Drawer**
+- `components/case/` — **case-study modules**: SectionNav, ReadingBar, ProgressRing, CompareSlider, AnnotatedScreen, FlowDiagram, ImageCarousel (interactive); SectionHeader, CaseDetails, OutcomeStrip, DecisionRow, ReasoningChain, ReframeQuote, StateList, NumberedCards, Callout, CaseNav. Each has a `.prompt.md` with usage rules; all are previewed in `components/case/case.card.html`.
 
 Each directory has `<Name>.jsx` + `<Name>.d.ts` + `<Name>.prompt.md`, and one `*.card.html` thumbnail.
 

@@ -1,0 +1,204 @@
+<!-- @dsCard group="Components" viewport="1100x5200" name="Case study — 17 modules" subtitle="Section nav, compare slider, annotated screen, flow diagram and the content modules" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html, body { margin: 0; background: var(--surface-page); }
+  .wrap { font-family: var(--font-sans); color: var(--text-primary); padding: 28px 30px; }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 12px; }
+  .block { margin-bottom: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="block"><div class="lbl">ProgressRing</div><div id="r-ProgressRing"></div></div>
+  <div class="block"><div class="lbl">SectionNav</div><div id="r-SectionNav"></div></div>
+  <div class="block"><div class="lbl">ReadingBar</div><div id="r-ReadingBar"></div></div>
+  <div class="block"><div class="lbl">CompareSlider</div><div id="r-CompareSlider"></div></div>
+  <div class="block"><div class="lbl">AnnotatedScreen</div><div id="r-AnnotatedScreen"></div></div>
+  <div class="block"><div class="lbl">FlowDiagram</div><div id="r-FlowDiagram"></div></div>
+  <div class="block"><div class="lbl">SectionHeader</div><div id="r-SectionHeader"></div></div>
+  <div class="block"><div class="lbl">CaseDetails</div><div id="r-CaseDetails"></div></div>
+  <div class="block"><div class="lbl">OutcomeStrip</div><div id="r-OutcomeStrip"></div></div>
+  <div class="block"><div class="lbl">DecisionRow</div><div id="r-DecisionRow"></div></div>
+  <div class="block"><div class="lbl">ReasoningChain</div><div id="r-ReasoningChain"></div></div>
+  <div class="block"><div class="lbl">ReframeQuote</div><div id="r-ReframeQuote"></div></div>
+  <div class="block"><div class="lbl">StateList</div><div id="r-StateList"></div></div>
+  <div class="block"><div class="lbl">CaseNav</div><div id="r-CaseNav"></div></div>
+  <div class="block"><div class="lbl">NumberedCards</div><div id="r-NumberedCards"></div></div>
+  <div class="block"><div class="lbl">Callout</div><div id="r-Callout"></div></div>
+  <div class="block"><div class="lbl">ImageCarousel</div><div id="r-ImageCarousel"></div></div>
+</div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+
+<script>
+  const h = React.createElement;
+  const NS = window.VitorGomesDesignSystem_32625a;
+(function () {
+  const { ProgressRing, SegmentedControl } = NS;
+  function Demo() {
+    const row = (v) => h('span', { key: v, style: { display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '.1em' } }, h(ProgressRing, { value: v }), v + '%');
+    return h('div', { style: { display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' } }, [0, 4, 34, 61, 100].map(row), h(ProgressRing, { value: 34, size: 40, strokeWidth: 1.4 }));
+  }
+  ReactDOM.createRoot(document.getElementById('r-ProgressRing')).render(h(Demo));
+})();
+(function () {
+  const { SectionNav, SegmentedControl } = NS;
+  function Demo() {
+    const names = ['Overview','Context','Challenge','Research','Strategy','Flow','Solution','Impact','Reflection'];
+    const [p, setP] = React.useState(34);
+    const [mode, setMode] = React.useState('open');
+    const n = names.length, idx = Math.min(n - 1, Math.floor(p / 100 * n));
+    const within = Math.round((p / 100 * n - idx) * 100);
+    const sections = names.map((label) => ({ id: label.toLowerCase(), label }));
+    return h('div', { style: { display: 'flex', gap: 32, alignItems: 'flex-start', flexWrap: 'wrap' } },
+      h(SectionNav, { sections, activeId: sections[idx].id, sectionProgress: within, progress: p, minutesLeft: Math.max(1, Math.round(18 * (1 - p / 100))), mode,
+        onNavigate: (id, e) => { e.preventDefault(); setP(Math.round(names.findIndex((x) => x.toLowerCase() === id) / n * 100) + 1); } }),
+      h('div', { style: { flex: '1 1 240px', display: 'flex', flexDirection: 'column', gap: 16 } },
+        h(SegmentedControl, { options: [{ label: 'Open', value: 'open' }, { label: 'Collapsed', value: 'collapsed' }], value: mode, onChange: setMode }),
+        h('label', { style: { fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--text-muted)' } }, 'Reading progress · ' + p + '%'),
+        h('input', { type: 'range', min: 0, max: 100, value: p, onChange: (e) => setP(Number(e.target.value)), 'aria-label': 'Reading progress' }),
+        h('p', { style: { fontSize: 14, lineHeight: 1.55, color: 'var(--text-secondary)', margin: 0 } }, 'Drag the slider or click a section. In a page, mode "auto" switches by viewport: open ≥1500px, collapsed 900–1499px, hidden below.')));
+  }
+  ReactDOM.createRoot(document.getElementById('r-SectionNav')).render(h(Demo));
+})();
+(function () {
+  const { ReadingBar, SegmentedControl } = NS;
+  function Demo() {
+    return h('div', { style: { width: 320, border: '1px solid var(--border-default)', borderRadius: 'var(--radius)', overflow: 'hidden' } },
+      h(ReadingBar, { section: { number: '05', label: 'Strategy' }, progress: 52, minutesLeft: 8, sticky: false }),
+      h('div', { style: { padding: '16px', display: 'flex', flexDirection: 'column', gap: 8 } }, [70, 92, 84].map((w) => h('div', { key: w, style: { height: 8, width: w + '%', background: 'var(--gray-150)' } }))));
+  }
+  ReactDOM.createRoot(document.getElementById('r-ReadingBar')).render(h(Demo));
+})();
+(function () {
+  const { CompareSlider, SegmentedControl } = NS;
+  function Demo() {
+    return h(CompareSlider, { ratio: '16 / 7', caption: { before: "[what didn't work]", after: '[what changed]' } });
+  }
+  ReactDOM.createRoot(document.getElementById('r-CompareSlider')).render(h(Demo));
+})();
+(function () {
+  const { AnnotatedScreen, SegmentedControl } = NS;
+  function Demo() {
+    return h(AnnotatedScreen, { width: 280, callouts: [
+      { x: 26, y: 16, title: 'One question first', body: 'Most people answer no and move on.' },
+      { x: 80, y: 38, title: 'A block per country', body: 'Markers past the middle open their card on the left.' },
+      { x: 30, y: 62, title: 'A branch for FATCA', body: 'The next field changes to match the ID type.' },
+      { x: 50, y: 88, title: 'No duplicates', body: 'A country can only be added once.' },
+    ] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-AnnotatedScreen')).render(h(Demo));
+})();
+(function () {
+  const { FlowDiagram, SegmentedControl } = NS;
+  function Demo() {
+    return h(FlowDiagram, {
+      nodes: [
+        { id: 'start', type: 'step', label: 'Start', x: 0, y: 60, w: 112 },
+        { id: 'a', type: 'decision', label: 'Gate A?', x: 152, y: 48 },
+        { id: 's1', type: 'step', label: 'Step', x: 312, y: 60 },
+        { id: 'b', type: 'decision', label: 'Gate B?', x: 488, y: 48 },
+        { id: 'r1', type: 'step', label: 'Route 1', x: 668, y: 20, w: 148 },
+        { id: 'r2', type: 'step', label: 'Route 2', x: 668, y: 100, w: 148 },
+        { id: 'done', type: 'step', label: 'Done', x: 880, y: 60, w: 112 },
+        { id: 'exit', type: 'exit', label: 'Exit · hard stop', x: 148, y: 196 },
+      ],
+      edges: [{ from: 'start', to: 'a' }, { from: 'a', to: 's1' }, { from: 'a', to: 'exit' }, { from: 's1', to: 'b' }, { from: 'b', to: 'r1' }, { from: 'b', to: 'r2' }, { from: 'r1', to: 'done' }, { from: 'r2', to: 'done' }],
+      paths: [
+        { id: 'r1', label: 'Route 1', nodes: ['start', 'a', 's1', 'b', 'r1', 'done'], description: 'Passes both gates and takes the first branch.' },
+        { id: 'r2', label: 'Route 2', nodes: ['start', 'a', 's1', 'b', 'r2', 'done'], description: 'Same gates, other branch.' },
+        { id: 'ex', label: 'Exit at A', nodes: ['start', 'a', 'exit'], description: 'A hard stop with an explanation and a way forward.' },
+      ],
+    });
+  }
+  ReactDOM.createRoot(document.getElementById('r-FlowDiagram')).render(h(Demo));
+})();
+(function () {
+  const { SectionHeader, SegmentedControl } = NS;
+  function Demo() {
+    return h(SectionHeader, { number: '04', eyebrow: 'Research', title: 'Listening before designing.', lead: 'Three methods, and the one finding that changed the plan.' });
+  }
+  ReactDOM.createRoot(document.getElementById('r-SectionHeader')).render(h(Demo));
+})();
+(function () {
+  const { CaseDetails, SegmentedControl } = NS;
+  function Demo() {
+    return h(CaseDetails, { attached: false,
+      facts: [{ label: 'Role', value: '[Title · scope]' }, { label: 'Team', value: '[Size and makeup]' }, { label: 'Timeline', value: '[Year(s) · client, location]' }, { label: 'Tools', value: '[Tool · tool · tool]' }],
+      details: [{ label: 'What I did', value: '[Your ownership in two or three lines.]' }, { label: 'Impact', value: '[The headline outcome in one line.]' }, { label: 'Constraints', value: '[What shaped or limited the work.]' }] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-CaseDetails')).render(h(Demo));
+})();
+(function () {
+  const { OutcomeStrip, SegmentedControl } = NS;
+  function Demo() {
+    return h(OutcomeStrip, { items: [{ label: 'Delivery', value: 'Live', live: true }, { label: 'Tools', value: 'Legacy → one system' }, { label: 'Channel', value: 'Branch → app' }, { label: 'Exits designed', value: '7 of 7' }] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-OutcomeStrip')).render(h(Demo));
+})();
+(function () {
+  const { DecisionRow, SegmentedControl } = NS;
+  function Demo() {
+    return h(DecisionRow, { number: '02', title: '[Decision · with screen]', mediaWidth: 220, divider: false }, h('p', { style: { margin: 0 } }, '[The problem, the call you made, and why.]'));
+  }
+  ReactDOM.createRoot(document.getElementById('r-DecisionRow')).render(h(Demo));
+})();
+(function () {
+  const { ReasoningChain, SegmentedControl } = NS;
+  function Demo() {
+    return h(ReasoningChain, { steps: [{ label: 'Hypothesis', text: '[What you believed going in.]' }, { label: 'Finding', text: '[What the research showed.]' }, { label: 'Decision', text: '[What you did because of it.]' }] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-ReasoningChain')).render(h(Demo));
+})();
+(function () {
+  const { ReframeQuote, SegmentedControl } = NS;
+  function Demo() {
+    return h(ReframeQuote, { source: '[The reframe] · [Source]', quote: '[The insight, restated as one quotable sentence.]', soWhat: '[So what — the goal this insight points to.]', themes: ['[Theme]', '[Theme]', '[Theme]'] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-ReframeQuote')).render(h(Demo));
+})();
+(function () {
+  const { SegmentedControl, StateList } = NS;
+  function Demo() {
+    return h(StateList, { states: ['Empty field', 'Invalid format', 'Code sent', 'Code expired', 'Too many requests', 'Timeout'] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-StateList')).render(h(Demo));
+})();
+(function () {
+  const { CaseNav, SegmentedControl } = NS;
+  function Demo() {
+    return h(CaseNav, { prev: { title: '[Previous case]' }, next: { title: '[Next case]' }, onNavigate: (item, dir, e) => e.preventDefault() });
+  }
+  ReactDOM.createRoot(document.getElementById('r-CaseNav')).render(h(Demo));
+})();
+(function () {
+  const { NumberedCards, SegmentedControl } = NS;
+  function Demo() {
+    return h(NumberedCards, { items: [{ title: '[Constraint]', body: '[Why it shaped the work.]' }, { title: '[Constraint]', body: '[Why it shaped the work.]' }, { title: '[Constraint]', body: '[Why it shaped the work.]' }] });
+  }
+  ReactDOM.createRoot(document.getElementById('r-NumberedCards')).render(h(Demo));
+})();
+(function () {
+  const { Callout, SegmentedControl } = NS;
+  function Demo() {
+    return h(Callout, { label: '[Callout label]' }, '[A supporting story — systems, process or team impact.]');
+  }
+  ReactDOM.createRoot(document.getElementById('r-Callout')).render(h(Demo));
+})();
+(function () {
+  const { ImageCarousel } = NS;
+  function Demo() {
+    return h('div', { style: { width: 280 } }, h(ImageCarousel, { startIndex: 1, label: 'Walkthrough', images: [{ label: 'Benefits' }, { label: 'Get ready' }, { label: "Let's get started" }] }));
+  }
+  ReactDOM.createRoot(document.getElementById('r-ImageCarousel')).render(h(Demo));
+})();
+</script>
+</body>
+</html>
