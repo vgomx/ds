@@ -9,7 +9,7 @@ export interface NavSection {
   href?: string;
 }
 /**
- * The case-study side nav: numbered sections with a reading rail each, and a footer with a ProgressRing, the % read and the minutes left. Open with labels on wide screens, collapsed to numbers in between, hidden on phones.
+ * The case-study side nav: numbered sections with a reading rail each, and a footer with the % read and the minutes left. Open with labels on wide screens, collapsed to numbers in between (hover or focus opens it over the page), hidden on phones.
  */
 export interface SectionNavProps {
   sections: NavSection[];
@@ -23,6 +23,8 @@ export interface SectionNavProps {
   minutesLeft?: number;
   /** "auto": open ≥1500px, collapsed 900–1499px, hidden <900px. @default "auto" */
   mode?: 'auto' | 'open' | 'collapsed' | 'hidden';
+  /** When collapsed, open with labels while hovered or focused. @default true */
+  openOnHover?: boolean;
   /** Called on click; default behaviour follows the href (#id). */
   onNavigate?: (id: string, event: React.MouseEvent) => void;
   /** Accessible name of the nav. @default "Case sections" */

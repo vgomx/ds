@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"},{"name":"ImageCarousel","sourcePath":"components/case/ImageCarousel.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"ba04182457a4","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"a595a87e4811","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"d39f2bed5cc3","components/case/CaseDetails.jsx":"39cff88d70e8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"e2c86384f7f8","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"ccfd76496129","components/case/ImageCarousel.jsx":"1982518e1d6f"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"VitorGomesDesignSystem_32625a","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SegmentedControl","sourcePath":"components/core/SegmentedControl.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Card","sourcePath":"components/data/Card.jsx"},{"name":"StatCard","sourcePath":"components/data/StatCard.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"Accordion","sourcePath":"components/feedback/Accordion.jsx"},{"name":"ProgressBar","sourcePath":"components/feedback/ProgressBar.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx"},{"name":"Drawer","sourcePath":"components/overlay/Drawer.jsx"},{"name":"Menu","sourcePath":"components/overlay/Menu.jsx"},{"name":"Modal","sourcePath":"components/overlay/Modal.jsx"},{"name":"ProgressRing","sourcePath":"components/case/ProgressRing.jsx"},{"name":"SectionNav","sourcePath":"components/case/SectionNav.jsx"},{"name":"ReadingBar","sourcePath":"components/case/ReadingBar.jsx"},{"name":"CompareSlider","sourcePath":"components/case/CompareSlider.jsx"},{"name":"AnnotatedScreen","sourcePath":"components/case/AnnotatedScreen.jsx"},{"name":"FlowDiagram","sourcePath":"components/case/FlowDiagram.jsx"},{"name":"SectionHeader","sourcePath":"components/case/SectionHeader.jsx"},{"name":"CaseDetails","sourcePath":"components/case/CaseDetails.jsx"},{"name":"OutcomeStrip","sourcePath":"components/case/OutcomeStrip.jsx"},{"name":"DecisionRow","sourcePath":"components/case/DecisionRow.jsx"},{"name":"ReasoningChain","sourcePath":"components/case/ReasoningChain.jsx"},{"name":"ReframeQuote","sourcePath":"components/case/ReframeQuote.jsx"},{"name":"StateList","sourcePath":"components/case/StateList.jsx"},{"name":"CaseNav","sourcePath":"components/case/CaseNav.jsx"},{"name":"NumberedCards","sourcePath":"components/case/NumberedCards.jsx"},{"name":"Callout","sourcePath":"components/case/Callout.jsx"},{"name":"ImageCarousel","sourcePath":"components/case/ImageCarousel.jsx"}],"sourceHashes":{"components/core/Avatar.jsx":"3c63b8a3bbf7","components/core/Badge.jsx":"7a0f0c67080c","components/core/Button.jsx":"bd96195b1914","components/core/Input.jsx":"4ed995a12431","components/core/SegmentedControl.jsx":"90cb5c3a6870","components/core/Tag.jsx":"75880b5c59f6","components/data/Card.jsx":"d776a8193a38","components/data/StatCard.jsx":"0345685c5e2a","components/data/Table.jsx":"3bbc3313bc2b","components/feedback/Accordion.jsx":"0f1722ced81c","components/feedback/ProgressBar.jsx":"cb91d900641c","components/feedback/Skeleton.jsx":"31c384fc2611","components/feedback/Spinner.jsx":"f82123f19f68","components/feedback/Tooltip.jsx":"b15ee0dc31d2","components/navigation/Breadcrumb.jsx":"aa2a214f4dfd","components/navigation/Pagination.jsx":"b80e29982e5c","components/navigation/Stepper.jsx":"77f99144f916","components/overlay/Drawer.jsx":"09dd22946423","components/overlay/Menu.jsx":"d32dd8003a33","components/overlay/Modal.jsx":"7e580b9904d1","ui_kits/portfolio/AboutScreen.jsx":"0299aead1532","ui_kits/portfolio/CaseStudyScreen.jsx":"e5abb20019e4","ui_kits/portfolio/Chrome.jsx":"9342f4c7a878","ui_kits/portfolio/HomeScreen.jsx":"59e64b609b52","ui_kits/portfolio/WorkScreen.jsx":"434ff50e6e1b","components/case/ProgressRing.jsx":"9ac04686f255","components/case/SectionNav.jsx":"6618eb5a0a04","components/case/ReadingBar.jsx":"61cc3d7bd900","components/case/CompareSlider.jsx":"fc08223b5127","components/case/AnnotatedScreen.jsx":"a595a87e4811","components/case/FlowDiagram.jsx":"2db64e0d2215","components/case/SectionHeader.jsx":"d39f2bed5cc3","components/case/CaseDetails.jsx":"39cff88d70e8","components/case/OutcomeStrip.jsx":"c0a353d7d9f9","components/case/DecisionRow.jsx":"e2c86384f7f8","components/case/ReasoningChain.jsx":"1edfd48f441d","components/case/ReframeQuote.jsx":"7b53ab408135","components/case/StateList.jsx":"391e8201608e","components/case/CaseNav.jsx":"7706356a3bb9","components/case/NumberedCards.jsx":"88b2291f9497","components/case/Callout.jsx":"ccfd76496129","components/case/ImageCarousel.jsx":"1982518e1d6f"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1685,9 +1685,6 @@ const {
   useEffect,
   useState
 } = React;
-const {
-  ProgressRing
-} = __ds_scope;
 const mono = {
   fontFamily: 'var(--font-mono)',
   textTransform: 'uppercase'
@@ -1716,9 +1713,11 @@ function useNavMode(mode) {
 /**
  * SectionNav — the case-study side nav. Numbered sections with a 2px
  * rail each (done = ink, current = filling as you read, upcoming =
- * hairline), and a footer with a ProgressRing, the % read and the
- * minutes left. Open with labels on wide screens, collapsed to numbers
- * in between, hidden on phones (use ReadingBar there).
+ * hairline), and a footer with the % read and the minutes left. The
+ * rails already show progress, so the footer is text only. Open with
+ * labels on wide screens, collapsed to numbers in between (hover or
+ * keyboard focus opens it over the page), hidden on phones (use
+ * ReadingBar there).
  */
 function SectionNav({
   sections = [],
@@ -1727,6 +1726,7 @@ function SectionNav({
   progress = 0,
   minutesLeft,
   mode = 'auto',
+  openOnHover = true,
   onNavigate,
   label = 'Case sections',
   style,
@@ -1735,12 +1735,21 @@ function SectionNav({
   const resolved = useNavMode(mode);
   const [hover, setHover] = useState(null);
   const [focus, setFocus] = useState(null);
+  const [peek, setPeek] = useState(false);
   if (resolved === 'hidden') return null;
-  const open = resolved === 'open';
+  // Collapsed opens while hovered or while focus is inside, drawn over the page.
+  const peeking = resolved === 'collapsed' && openOnHover && peek;
+  const open = resolved === 'open' || peeking;
   const activeIndex = Math.max(0, sections.findIndex(s => s.id === activeId));
   const pct = Math.round(Math.max(0, Math.min(100, progress)));
   return /*#__PURE__*/React.createElement("nav", _extends({
     "aria-label": label,
+    onMouseEnter: () => setPeek(true),
+    onMouseLeave: () => setPeek(false),
+    onFocus: () => setPeek(true),
+    onBlur: e => {
+      if (!e.currentTarget.contains(e.relatedTarget)) setPeek(false);
+    },
     style: {
       display: 'flex',
       flexDirection: 'column',
@@ -1748,6 +1757,8 @@ function SectionNav({
       minWidth: open ? 160 : 0,
       background: 'var(--surface-page)',
       border: '1px solid var(--border-hairline)',
+      boxShadow: peeking ? 'var(--shadow-pop)' : 'none',
+      transition: 'box-shadow var(--dur-fast, 120ms) var(--ease-out, ease)',
       ...style
     }
   }, rest), sections.map((s, i) => {
@@ -1815,28 +1826,19 @@ function SectionNav({
     }, s.label));
   }), /*#__PURE__*/React.createElement("div", {
     style: {
-      display: 'flex',
-      flexDirection: open ? 'row' : 'column',
-      alignItems: open ? 'center' : 'flex-start',
-      gap: open ? 8 : 6,
       padding: '8px 12px',
       borderTop: '1px solid var(--border-hairline)',
       ...mono,
       fontSize: 10,
       letterSpacing: '0.1em',
-      color: 'var(--text-muted)'
-    }
-  }, /*#__PURE__*/React.createElement(ProgressRing, {
-    value: pct
-  }), /*#__PURE__*/React.createElement("span", {
-    style: {
+      color: 'var(--text-muted)',
       whiteSpace: 'nowrap'
     }
   }, /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--text-primary)'
     }
-  }, pct, "%"), open && minutesLeft != null && /*#__PURE__*/React.createElement("span", null, " \xB7 ", minutesLeft, " min left"))));
+  }, pct, "%"), open && minutesLeft != null && /*#__PURE__*/React.createElement("span", null, " \xB7 ", minutesLeft, " min left")));
 }
 Object.assign(__ds_scope, { SectionNav });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/case/SectionNav.jsx", error: String((e && e.message) || e) }); }

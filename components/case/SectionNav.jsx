@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { ProgressRing } from './ProgressRing.jsx';
 
 const mono = { fontFamily: 'var(--font-mono)', textTransform: 'uppercase' };
 
@@ -26,9 +25,11 @@ function useNavMode(mode) {
 /**
  * SectionNav — the case-study side nav. Numbered sections with a 2px
  * rail each (done = ink, current = filling as you read, upcoming =
- * hairline), and a footer with a ProgressRing, the % read and the
- * minutes left. Open with labels on wide screens, collapsed to numbers
- * in between, hidden on phones (use ReadingBar there).
+ * hairline), and a footer with the % read and the minutes left. The
+ * rails already show progress, so the footer is text only. Open with
+ * labels on wide screens, collapsed to numbers in between (hover or
+ * keyboard focus opens it over the page), hidden on phones (use
+ * ReadingBar there).
  */
 export function SectionNav({
   sections = [],
@@ -37,6 +38,7 @@ export function SectionNav({
   progress = 0,
   minutesLeft,
   mode = 'auto',
+  openOnHover = true,
   onNavigate,
   label = 'Case sections',
   style,
@@ -45,20 +47,29 @@ export function SectionNav({
   const resolved = useNavMode(mode);
   const [hover, setHover] = useState(null);
   const [focus, setFocus] = useState(null);
+  const [peek, setPeek] = useState(false);
   if (resolved === 'hidden') return null;
-  const open = resolved === 'open';
+  // Collapsed opens while hovered or while focus is inside, drawn over the page.
+  const peeking = resolved === 'collapsed' && openOnHover && peek;
+  const open = resolved === 'open' || peeking;
   const activeIndex = Math.max(0, sections.findIndex((s) => s.id === activeId));
   const pct = Math.round(Math.max(0, Math.min(100, progress)));
 
   return (
     <nav
       aria-label={label}
+      onMouseEnter={() => setPeek(true)}
+      onMouseLeave={() => setPeek(false)}
+      onFocus={() => setPeek(true)}
+      onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setPeek(false); }}
       style={{
         display: 'flex', flexDirection: 'column',
         width: 'auto',
         minWidth: open ? 160 : 0,
         background: 'var(--surface-page)',
         border: '1px solid var(--border-hairline)',
+        boxShadow: peeking ? 'var(--shadow-pop)' : 'none',
+        transition: 'box-shadow var(--dur-fast, 120ms) var(--ease-out, ease)',
         ...style,
       }}
       {...rest}
@@ -102,16 +113,11 @@ export function SectionNav({
         );
       })}
       <div style={{
-        display: 'flex', flexDirection: open ? 'row' : 'column',
-        alignItems: open ? 'center' : 'flex-start', gap: open ? 8 : 6,
         padding: '8px 12px', borderTop: '1px solid var(--border-hairline)',
-        ...mono, fontSize: 10, letterSpacing: '0.1em', color: 'var(--text-muted)',
+        ...mono, fontSize: 10, letterSpacing: '0.1em', color: 'var(--text-muted)', whiteSpace: 'nowrap',
       }}>
-        <ProgressRing value={pct} />
-        <span style={{ whiteSpace: 'nowrap' }}>
-          <span style={{ color: 'var(--text-primary)' }}>{pct}%</span>
-          {open && minutesLeft != null && <span> · {minutesLeft} min left</span>}
-        </span>
+        <span style={{ color: 'var(--text-primary)' }}>{pct}%</span>
+        {open && minutesLeft != null && <span> · {minutesLeft} min left</span>}
       </div>
     </nav>
   );
