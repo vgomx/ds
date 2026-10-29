@@ -10,11 +10,11 @@ const placeholder = {
 /**
  * DecisionRow — one design decision with the screen that shows it:
  * screen on the left, number + headline + reasoning on the right.
- * Stacks screen-first on narrow viewports. When the screen is taller
- * than the text, the text sticks while the screen scrolls past
+ * Stacks screen-first on narrow viewports. When the text is longer
+ * than the screen, the screen sticks while the text scrolls past
  * (top offset from --case-sticky-top).
  */
-export function DecisionRow({ number, title, tag, children, media, mediaWidth = 280, divider = true, stickyText = true, style, ...rest }) {
+export function DecisionRow({ number, title, tag, children, media, mediaWidth = 280, divider = true, stickyMedia = true, style, ...rest }) {
   let visual = media;
   if (media && media.src) {
     visual = <img src={media.src} alt={media.alt || ''} style={{ display: 'block', width: '100%', height: 'auto', border: '1px solid var(--border-hairline)', borderRadius: 'var(--radius)' }} />;
@@ -23,8 +23,8 @@ export function DecisionRow({ number, title, tag, children, media, mediaWidth = 
   }
   return (
     <article style={{ paddingTop: divider ? 40 : 0, borderTop: divider ? '1px solid var(--border-hairline)' : 0, display: 'flex', flexWrap: 'wrap', gap: '32px 48px', alignItems: 'flex-start', ...style }} {...rest}>
-      <div style={{ flex: `0 1 ${mediaWidth}px`, minWidth: Math.min(220, mediaWidth), maxWidth: '100%' }}>{visual}</div>
-      <div style={{ flex: '1 1 420px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12, ...(stickyText ? { position: 'sticky', top: 'var(--case-sticky-top, 24px)' } : null) }}>
+      <div style={{ flex: `0 1 ${mediaWidth}px`, minWidth: Math.min(220, mediaWidth), maxWidth: '100%', ...(stickyMedia ? { position: 'sticky', top: 'var(--case-sticky-top, 24px)' } : null) }}>{visual}</div>
+      <div style={{ flex: '1 1 420px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           {number && <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.1em', color: 'var(--text-muted)' }}>{number}</span>}
           {tag && <Tag tone="subtle" size="sm">{tag}</Tag>}
