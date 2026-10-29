@@ -13,3 +13,4 @@ ImageCarousel — for two to five screens that belong together but would crowd a
 - Buttons are 44px; arrow keys work while focus is inside. Only the visible image is exposed to screen readers; the caption is a live region.
 - No autoplay and no looping: the reader controls the pace, and the ends are clear.
 - If every screen needs to be seen at once to make the point, use a row of screens instead.
+- **Rule:** in a case page, where a carousel would carry a story (each screen with something to say), use `StickySteps` instead. Keep the carousel for compact spots and for boards that don't scroll.
