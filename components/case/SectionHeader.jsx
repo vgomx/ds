@@ -15,7 +15,7 @@ export function SectionHeader({ number, eyebrow, title, lead, as = 'h2', id, sty
         </div>
       )}
       <H style={{ fontSize: 40, lineHeight: 1.05, fontWeight: 600, letterSpacing: 'var(--tracking-tight)', margin: 0, textWrap: 'balance' }}>{title}</H>
-      {lead && <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--text-secondary)', margin: '24px 0 0', maxWidth: 760 }}>{lead}</p>}
+      {lead && <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--text-secondary)', margin: '24px 0 0' }}>{lead}</p>}
     </header>
   );
 }
