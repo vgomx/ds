@@ -38,7 +38,18 @@ export function AnnotatedScreen({
   const [side, setSide] = useState(placement === 'left' ? 'left' : 'right');
   const stageRef = useRef(null);
   const frameRef = useRef(null);
+  const markerRefs = useRef([]);
   const c = items[active];
+  // A row click also takes the reader to its marker on the screen, when it's out of view.
+  const goTo = (i) => () => {
+    setActive(i);
+    const el = markerRefs.current[i];
+    if (!el || typeof window === 'undefined') return;
+    const r = el.getBoundingClientRect();
+    if (r.top >= 80 && r.bottom <= window.innerHeight - 24) return;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+  };
 
   useEffect(() => {
     if (typeof window === 'undefined') return undefined;
@@ -76,7 +87,7 @@ export function AnnotatedScreen({
             const on = i === active;
             return (
               <button
-                key={i} type="button"
+                key={i} type="button" ref={(el) => { markerRefs.current[i] = el; }}
                 aria-label={`Callout ${i + 1}: ${d.title}`}
                 aria-expanded={on}
                 onMouseEnter={pick(i)} onFocus={pick(i)} onClick={pick(i)}
@@ -116,7 +127,7 @@ export function AnnotatedScreen({
           return (
             <li key={i} style={{ flex: '1 1 220px', minWidth: 0, background: 'var(--surface-page)' }}>
               <button
-                type="button" onMouseEnter={pick(i)} onFocus={pick(i)} onClick={pick(i)} aria-pressed={on}
+                type="button" onMouseEnter={pick(i)} onFocus={pick(i)} onClick={goTo(i)} aria-pressed={on}
                 style={{
                   width: '100%', minHeight: 64, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 14,
                   padding: '16px 20px', border: 0, borderTop: `2px solid ${on ? 'var(--green-600)' : 'transparent'}`,
