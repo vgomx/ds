@@ -10,14 +10,12 @@ const placeholder = {
 /**
  * DecisionRow — one design decision with the screen that shows it:
  * screen on the left, number + headline + reasoning on the right.
- * Stacks screen-first on narrow viewports. Whichever column is shorter
- * sticks while the taller one scrolls past: the text beside a long
- * board, the screen beside long reasoning (top offset from
- * --case-sticky-top).
+ * Stacks screen-first on narrow viewports. When the text is longer
+ * than the screen, the screen sticks while the text scrolls past
+ * (top offset from --case-sticky-top).
  */
 export function DecisionRow({ number, title, tag, children, media, mediaWidth = 280, divider = true, sticky = true, stickyMedia, style, ...rest }) {
-  // Both columns are sticky; only the shorter one has room to move, so it
-  // is the one that stays in view. stickyMedia is the earlier name.
+  // The screen sticks beside longer text. stickyMedia is the earlier name.
   const pin = (stickyMedia ?? sticky) ? { position: 'sticky', top: 'var(--case-sticky-top, 24px)' } : null;
   let visual = media;
   if (media && media.src) {
@@ -28,7 +26,7 @@ export function DecisionRow({ number, title, tag, children, media, mediaWidth = 
   return (
     <article style={{ paddingTop: divider ? 40 : 0, borderTop: divider ? '1px solid var(--border-hairline)' : 0, display: 'flex', flexWrap: 'wrap', gap: '32px 48px', alignItems: 'flex-start', ...style }} {...rest}>
       <div style={{ flex: `0 1 ${mediaWidth}px`, minWidth: Math.min(220, mediaWidth), maxWidth: '100%', ...pin }}>{visual}</div>
-      <div style={{ flex: '1 1 420px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12, ...pin }}>
+      <div style={{ flex: '1 1 420px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           {number && <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.1em', color: 'var(--text-muted)' }}>{number}</span>}
           {tag && <Tag tone="subtle" size="sm">{tag}</Tag>}
