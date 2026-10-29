@@ -12,5 +12,5 @@ AnnotatedScreen — for the one screen in a case with the most hidden logic, whe
 
 - Markers sit on the element they describe, not in empty space.
 - `auto` placement measures the stage: markers past the middle open their card on the left when it fits; on phones the card drops under the screen.
-- The row list mirrors the markers. It is the way in on touch and for screen readers; the open card is a live region.
+- The row list mirrors the markers. It is the way in on touch and for screen readers; the open card is a live region. Clicking or tapping a row also scrolls its marker into view when it is off screen.
 - The active marker and row use the reserved green, because this is an active state.
