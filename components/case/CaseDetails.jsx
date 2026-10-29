@@ -6,7 +6,7 @@ function Cell({ item, basis }) {
   return (
     <div style={{ flex: `1 1 ${basis}px`, minWidth: 0, boxSizing: 'border-box', padding: 24, background: 'var(--surface-page)', display: 'flex', flexDirection: 'column', gap: 12 }}>
       <h3 style={{ ...label, color: 'var(--text-primary)' }}>{item.label}</h3>
-      <p style={{ fontSize: 14, lineHeight: 1.55, color: 'var(--text-secondary)', margin: 0 }}>{item.value}</p>
+      <p style={{ fontSize: 12, lineHeight: 1.55, color: 'var(--text-secondary)', margin: 0 }}>{item.value}</p>
     </div>
   );
 }
