@@ -4,16 +4,16 @@ import { Badge } from '../core/Badge.jsx';
 const stripes = 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)';
 const monoLabel = { fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-muted)' };
 
-function Layer({ img, fallback, style }) {
+const Layer = React.forwardRef(function Layer({ img, fallback, style }, ref) {
   if (img && img.src) {
-    return <img src={img.src} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block', ...style }} />;
+    return <img ref={ref} src={img.src} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block', ...style }} />;
   }
   return (
-    <div style={{ position: 'absolute', inset: 0, background: style && style.background ? style.background : 'var(--surface-sunken)', display: 'flex', alignItems: 'center', justifyContent: 'center', ...style }}>
+    <div ref={ref} style={{ position: 'absolute', inset: 0, background: style && style.background ? style.background : 'var(--surface-sunken)', display: 'flex', alignItems: 'center', justifyContent: 'center', ...style }}>
       <span style={monoLabel}>[ {fallback} ]</span>
     </div>
   );
-}
+});
 
 /**
  * CompareSlider — before and after in one frame, split by a draggable
@@ -34,8 +34,42 @@ export function CompareSlider({
   const [pos, setPos] = useState(start);
   const [animating, setAnimating] = useState(false);
   const frameRef = useRef(null);
+  const beforeRef = useRef(null);
+  const lineRef = useRef(null);
+  const handleRef = useRef(null);
+  const posRef = useRef(start);
+  const rafRef = useRef(0);
   const timeoutsRef = useRef([]);
   const hintedRef = useRef(false);
+
+  // Paints the drag position straight onto the DOM via refs, bypassing
+  // React. A controlled range input re-renders the whole tree on every
+  // pixel of drag movement; Safari in particular can't keep up with that,
+  // so the handle visibly lags the cursor. Painting directly keeps the
+  // drag itself butter-smooth regardless of render cost; `pos` (state)
+  // still gets committed, just throttled to once per frame.
+  const paint = (p) => {
+    if (beforeRef.current) beforeRef.current.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
+    if (lineRef.current) lineRef.current.style.left = `${p}%`;
+    if (handleRef.current) handleRef.current.style.left = `${p}%`;
+  };
+
+  const onDrag = (p) => {
+    posRef.current = p;
+    paint(p);
+    if (rafRef.current) return;
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = 0;
+      setPos(posRef.current);
+    });
+  };
+
+  useEffect(() => {
+    posRef.current = pos;
+    paint(pos);
+  }, [pos]);
+
+  useEffect(() => () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); }, []);
 
   const clearHintTimers = () => {
     timeoutsRef.current.forEach(clearTimeout);
@@ -88,11 +122,11 @@ export function CompareSlider({
         style={{ position: 'relative', aspectRatio: ratio, overflow: 'hidden', border: '1px solid var(--border-hairline)', borderRadius: 'var(--radius)', background: 'var(--surface-sunken)' }}
       >
         <Layer img={after} fallback={labels.after} />
-        <Layer img={before} fallback={labels.before} style={{ clipPath: `inset(0 ${100 - pos}% 0 0)`, background: stripes, transition: animating ? 'clip-path 220ms ease-in-out' : 'none' }} />
+        <Layer ref={beforeRef} img={before} fallback={labels.before} style={{ clipPath: `inset(0 ${100 - pos}% 0 0)`, background: stripes, transition: animating ? 'clip-path 220ms ease-in-out' : 'none' }} />
         <div style={{ position: 'absolute', top: 12, left: 12, ...fade(pos > 12) }}><Badge status="archived">{labels.before}</Badge></div>
         <div style={{ position: 'absolute', top: 12, right: 12, ...fade(pos < 88) }}><Badge status="live">{labels.after}</Badge></div>
-        <div aria-hidden="true" style={{ position: 'absolute', top: 0, bottom: 0, left: `${pos}%`, width: 2, marginLeft: -1, background: 'var(--text-primary)', pointerEvents: 'none', transition: handleTransition }} />
-        <div aria-hidden="true" style={{
+        <div ref={lineRef} aria-hidden="true" style={{ position: 'absolute', top: 0, bottom: 0, left: `${pos}%`, width: 2, marginLeft: -1, background: 'var(--text-primary)', pointerEvents: 'none', transition: handleTransition }} />
+        <div ref={handleRef} aria-hidden="true" style={{
           position: 'absolute', top: '50%', left: `${pos}%`, width: 44, height: 44, margin: '-22px 0 0 -22px',
           boxSizing: 'border-box', border: '1px solid var(--border-strong)', borderRadius: 'var(--radius)',
           background: 'var(--surface-page)', display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -100,7 +134,7 @@ export function CompareSlider({
         }}><span>‹</span><span>›</span></div>
         <input
           type="range" min="0" max="100" step="1" value={pos}
-          onChange={(e) => { cancelHint(); setPos(Number(e.target.value)); }}
+          onChange={(e) => { cancelHint(); onDrag(Number(e.target.value)); }}
           onPointerDown={cancelHint}
           onKeyDown={cancelHint}
           aria-label="Drag to compare before and after"
