@@ -104,7 +104,7 @@ export function StickySteps({
   }
 
   return (
-    <div style={{ display: 'flex', gap: 64, alignItems: 'flex-start', ...style }} {...rest}>
+    <div style={{ display: 'flex', gap: 48, alignItems: 'flex-start', ...style }} {...rest}>
       <div style={{ flex: `0 0 ${mediaWidth}px`, position: 'sticky', top: 'var(--case-sticky-top, 24px)' }}>
         <div aria-live="polite" style={frame}>
           {steps.map((s, i) => (
