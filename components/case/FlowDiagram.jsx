@@ -117,7 +117,7 @@ export function FlowDiagram({
             };
             if (n.type === 'decision') {
               return (
-                <div key={n.id} style={{ ...base, padding: '8px 18px', background: on ? 'var(--green-tint-light)' : 'var(--surface-subtle)', clipPath: `path('${diamondPath(b.w, b.h)}')` }}>
+                <div key={n.id} style={{ ...base, padding: '8px 18px', background: on ? 'var(--green-tint)' : 'var(--surface-subtle)', clipPath: `path('${diamondPath(b.w, b.h)}')` }}>
                   {n.label}
                 </div>
               );

@@ -78,6 +78,11 @@
   --accent-on-dark-ink: var(--ink-900);
   --accent-tint-dark: var(--ink-800);
 
+  /* Theme-aware green tint — pairs with --text-primary (which flips to
+     paper in dark mode) so "on" diagram nodes stay readable in both
+     themes; dark-mode.css swaps this to --green-tint-dark. */
+  --green-tint: var(--green-tint-light);
+
   /* Feedback */
   --danger:         var(--red-600);
   --danger-on-dark: var(--red-400);

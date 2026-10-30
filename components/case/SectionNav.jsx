@@ -65,7 +65,7 @@ export function SectionNav({
       style={{
         display: 'flex', flexDirection: 'column',
         width: 'auto',
-        minWidth: open ? 160 : 0,
+        minWidth: open ? 148 : 0,
         background: 'var(--surface-page)',
         border: '1px solid var(--border-hairline)',
         boxShadow: peeking ? 'var(--shadow-pop)' : 'none',
@@ -89,23 +89,24 @@ export function SectionNav({
             onFocus={() => setFocus(i)}
             onBlur={() => setFocus(null)}
             style={{
-              position: 'relative', display: 'flex', alignItems: 'center', gap: 10,
-              minHeight: 32, boxSizing: 'border-box', padding: '7px 10px 7px 12px',
+              position: 'relative', display: 'flex', alignItems: 'center', gap: 8,
+              minHeight: 28, boxSizing: 'border-box', padding: '6px 8px 6px 10px',
               textDecoration: 'none',
-              background: current || hover === i ? 'var(--surface-subtle)' : 'var(--surface-page)',
-              outline: focus === i ? 'var(--ring-width, 2px) solid var(--ring)' : 'none',
-              outlineOffset: -2,
+              /* Focus gets its own, slightly deeper grey fill rather than a
+                 boxed outline — a 2px ring on a 28px row read as heavy. */
+              background: focus === i ? 'var(--surface-sunken)' : current || hover === i ? 'var(--surface-subtle)' : 'var(--surface-page)',
+              outline: 'none',
               transition: 'background-color var(--dur-fast, 120ms) var(--ease-out, ease)',
             }}
           >
             <span aria-hidden="true" style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 2, background: 'var(--border-hairline)' }}>
               <span style={{ display: 'block', width: 2, height: `${fill}%`, background: 'var(--text-primary)', transition: 'height var(--dur-base, 180ms) var(--ease-out, ease)' }} />
             </span>
-            <span style={{ ...mono, fontSize: 10, letterSpacing: '0.1em', color: 'var(--text-muted)', width: 18, flexShrink: 0 }}>
+            <span style={{ ...mono, fontSize: 9, letterSpacing: '0.1em', color: 'var(--text-muted)', width: 16, flexShrink: 0 }}>
               {s.number || String(i + 1).padStart(2, '0')}
             </span>
             {open && (
-              <span style={{ ...mono, fontSize: 11, letterSpacing: '0.08em', whiteSpace: 'nowrap', color: current ? 'var(--text-primary)' : 'var(--text-secondary)' }}>
+              <span style={{ ...mono, fontSize: 10, letterSpacing: '0.08em', whiteSpace: 'nowrap', color: current ? 'var(--text-primary)' : 'var(--text-secondary)' }}>
                 {s.label}
               </span>
             )}
@@ -113,10 +114,16 @@ export function SectionNav({
         );
       })}
       <div style={{
-        padding: '8px 12px', borderTop: '1px solid var(--border-hairline)',
-        ...mono, fontSize: 10, letterSpacing: '0.1em', color: 'var(--text-muted)', whiteSpace: 'nowrap',
+        padding: '7px 10px', borderTop: '1px solid var(--border-hairline)',
+        ...mono, fontSize: 9, letterSpacing: '0.1em', color: 'var(--text-muted)', whiteSpace: 'nowrap',
       }}>
-        <span style={{ color: 'var(--text-primary)' }}>{pct}%</span>
+        {/* Fixed-width, left-aligned like the row numbers above (so "0%"
+            lines up under "01" instead of drifting right) and capped at
+            max "100%" so the row never reflows the nav's auto width as
+            progress crosses digit boundaries. letterSpacing reset to
+            normal: tracking adds real width per character, which would
+            otherwise make a 3-char value measure wider than `4ch`. */}
+        <span style={{ display: 'inline-block', minWidth: '4ch', letterSpacing: 'normal', color: 'var(--text-primary)' }}>{pct}%</span>
         {open && minutesLeft != null && <span> · {minutesLeft} min left</span>}
       </div>
     </nav>
