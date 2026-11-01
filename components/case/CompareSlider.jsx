@@ -3,6 +3,10 @@ import { Badge } from '../core/Badge.jsx';
 
 const stripes = 'repeating-linear-gradient(135deg, var(--gray-50) 0 11px, var(--gray-150) 11px 22px)';
 const monoLabel = { fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-muted)' };
+// A fixed (not theme-token) translucent dark chip: the before/after image
+// behind it doesn't follow the site's light/dark mode, so the badge needs
+// a backdrop that reads the same regardless of either.
+const chipStyle = { background: 'rgba(20, 20, 22, 0.72)', borderColor: 'rgba(255, 255, 255, 0.22)', backdropFilter: 'blur(6px)', WebkitBackdropFilter: 'blur(6px)' };
 
 const Layer = React.forwardRef(function Layer({ img, fallback, style }, ref) {
   if (img && img.src) {
@@ -128,8 +132,18 @@ export function CompareSlider({
       >
         <Layer img={after} fallback={labels.after} />
         <Layer ref={beforeRef} img={before} fallback={labels.before} style={{ clipPath: `inset(0 ${100 - pos}% 0 0)`, background: stripes, transform: 'translateZ(0)', willChange: 'clip-path', transition: animating ? 'clip-path 220ms ease-in-out' : 'none' }} />
-        <div style={{ position: 'absolute', top: 12, left: 12, ...fade(pos > 12) }}><Badge status="archived">{labels.before}</Badge></div>
-        <div style={{ position: 'absolute', top: 12, right: 12, ...fade(pos < 88) }}><Badge status="live">{labels.after}</Badge></div>
+        {/* Badge is outline-only by design — fine on a page background we
+            control, not on an arbitrary before/after image that could be
+            light or dark either side. Giving it its own fixed dark chip
+            (not a theme token, since the image doesn't follow the site's
+            light/dark mode) and onDark colors keeps both labels legible
+            regardless of what's under them. */}
+        <div style={{ position: 'absolute', top: 12, left: 12, ...fade(pos > 12) }}>
+          <Badge status="archived" onDark style={chipStyle}>{labels.before}</Badge>
+        </div>
+        <div style={{ position: 'absolute', top: 12, right: 12, ...fade(pos < 88) }}>
+          <Badge status="live" onDark style={chipStyle}>{labels.after}</Badge>
+        </div>
         <div ref={lineRef} aria-hidden="true" style={{ position: 'absolute', top: 0, bottom: 0, left: `${pos}%`, width: 2, marginLeft: -1, background: 'var(--text-primary)', pointerEvents: 'none', transition: handleTransition }} />
         <div ref={handleRef} aria-hidden="true" style={{
           position: 'absolute', top: '50%', left: `${pos}%`, width: 44, height: 44, margin: '-22px 0 0 -22px',
