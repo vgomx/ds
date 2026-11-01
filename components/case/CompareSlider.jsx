@@ -48,16 +48,10 @@ export function CompareSlider({
   // so the handle visibly lags the cursor. Painting directly keeps the
   // drag itself butter-smooth regardless of render cost; `pos` (state)
   // still gets committed, just throttled to once per frame.
-  //
-  // The line and handle move via `transform`, not `left`: `left` triggers
-  // layout on every paint, and Safari's layout cost (unlike Chromium's)
-  // scales with the rest of the page, which is what made the drag
-  // intermittently heavy rather than consistently slow. `transform` is
-  // composite-only, so the cost stays flat regardless of page weight.
   const paint = (p) => {
     if (beforeRef.current) beforeRef.current.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
-    if (lineRef.current) lineRef.current.style.transform = `translateX(calc(${p}% - 1px))`;
-    if (handleRef.current) handleRef.current.style.transform = `translateX(calc(${p}% - 22px))`;
+    if (lineRef.current) lineRef.current.style.left = `${p}%`;
+    if (handleRef.current) handleRef.current.style.left = `${p}%`;
   };
 
   const onDrag = (p) => {
@@ -117,7 +111,7 @@ export function CompareSlider({
 
   const fade = (on) => ({ opacity: on ? 1 : 0, transition: 'opacity var(--dur-base, 180ms) var(--ease-out, ease)', pointerEvents: 'none' });
   const alt = [before && before.alt && `Before: ${before.alt}`, after && after.alt && `After: ${after.alt}`].filter(Boolean).join('. ');
-  const handleTransition = animating ? 'transform 220ms ease-in-out' : 'none';
+  const handleTransition = animating ? 'left 220ms ease-in-out' : 'none';
 
   return (
     <figure style={{ margin: 0, display: 'flex', flexDirection: 'column', gap: 12, ...style }} {...rest}>
@@ -127,7 +121,7 @@ export function CompareSlider({
         aria-label={alt || 'Before and after comparison'}
         // translateZ(0) promotes the frame to its own compositor layer up
         // front. Without it, Safari decides whether the clip-path below gets
-        // a layer heuristically — sometimes before the first drag, sometimes
+        // a layer heuristically — sometimes on the first drag, sometimes
         // not — which is what made the slider intermittently slow rather
         // than reliably one way or the other.
         style={{ position: 'relative', aspectRatio: ratio, overflow: 'hidden', border: '1px solid var(--border-hairline)', borderRadius: 'var(--radius)', background: 'var(--surface-sunken)', transform: 'translateZ(0)' }}
@@ -136,13 +130,12 @@ export function CompareSlider({
         <Layer ref={beforeRef} img={before} fallback={labels.before} style={{ clipPath: `inset(0 ${100 - pos}% 0 0)`, background: stripes, transform: 'translateZ(0)', willChange: 'clip-path', transition: animating ? 'clip-path 220ms ease-in-out' : 'none' }} />
         <div style={{ position: 'absolute', top: 12, left: 12, ...fade(pos > 12) }}><Badge status="archived">{labels.before}</Badge></div>
         <div style={{ position: 'absolute', top: 12, right: 12, ...fade(pos < 88) }}><Badge status="live">{labels.after}</Badge></div>
-        <div ref={lineRef} aria-hidden="true" style={{ position: 'absolute', top: 0, bottom: 0, left: 0, width: 2, background: 'var(--text-primary)', pointerEvents: 'none', transform: `translateX(calc(${pos}% - 1px))`, transition: handleTransition }} />
+        <div ref={lineRef} aria-hidden="true" style={{ position: 'absolute', top: 0, bottom: 0, left: `${pos}%`, width: 2, marginLeft: -1, background: 'var(--text-primary)', pointerEvents: 'none', transition: handleTransition }} />
         <div ref={handleRef} aria-hidden="true" style={{
-          position: 'absolute', top: '50%', left: 0, width: 44, height: 44, marginTop: -22,
+          position: 'absolute', top: '50%', left: `${pos}%`, width: 44, height: 44, margin: '-22px 0 0 -22px',
           boxSizing: 'border-box', border: '1px solid var(--border-strong)', borderRadius: 'var(--radius)',
           background: 'var(--surface-page)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-          gap: 6, fontSize: 16, lineHeight: 1, color: 'var(--text-primary)', pointerEvents: 'none',
-          transform: `translateX(calc(${pos}% - 22px))`, transition: handleTransition,
+          gap: 6, fontSize: 16, lineHeight: 1, color: 'var(--text-primary)', pointerEvents: 'none', transition: handleTransition,
         }}><span>‹</span><span>›</span></div>
         <input
           type="range" min="0" max="100" step="1" value={pos}
